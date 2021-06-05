@@ -1,6 +1,0 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
-[submodule "themes/cm-2021"]
-	path = themes/cm-2021
-	url = https://github.com/Vimux/blank.git
