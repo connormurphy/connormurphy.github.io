@@ -29,3 +29,13 @@ a {
     text-decoration: none;
   }
 }
+
+.projects {
+  width: 50%;
+  justify-self: flex-end;
+
+  li {
+    padding: 3em 0;
+    border-bottom: 1px solid $color-border;
+  }
+}

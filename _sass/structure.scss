@@ -18,10 +18,14 @@ li {
   width: 95%;
   margin: auto;
 }
+
 .flex {
   display: flex;
   &.between {
     justify-content: space-between;
+  }
+  &.end {
+    justify-content: flex-end;
   }
   &.top {
     align-items: flex-start;
@@ -32,6 +36,10 @@ li {
   &.bottom {
     align-items: flex-end;
   }
+}
+
+.full {
+  width: 100%;
 }
 .grow {
   flex-grow: 1;
@@ -63,4 +71,8 @@ li {
   &.slim {
     padding: 2em 0;
   }
+}
+
+.max-40 {
+  max-width: 40%;
 }

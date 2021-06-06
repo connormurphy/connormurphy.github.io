@@ -3,7 +3,7 @@ layout: default
 title: 'Home'
 ---
 <div class="section slim no-border" data-scroll-section>
-  <h2 class="x-large">{{ site.data.content.index_heading }}</h2>
+  <h2 class="xx-large">{{ site.data.content.index_heading }}</h2>
 </div>
 
 <div class="section" data-scroll-section>
@@ -12,15 +12,28 @@ title: 'Home'
     {{ site.data.content.index_about | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
   {% if site.data.content.index_about_cta %}
-    <a href="/about/" class="primary">{{ site.data.content.index_about_cta }}</a>
+    <div class="flex full end mt-5">
+      <a href="/about/" class="primary">{{ site.data.content.index_about_cta }}</a>
+    </div>
   {% endif %}
 </div>
 
-<div class="section" data-scroll-section>
-  <h2>Projects</h2>
-  {% for project in site.projects %}
-    <li>
-      <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-    </li>
-  {% endfor %}
+<div class="section grid" data-scroll-section>
+  <h2 class="x-large">Projects</h2>
+  <p class="mt-10 max-40 medium">{{ site.data.content.index_projects | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+  <div class="projects mt-5">
+    {% for project in site.projects %}
+      <a href="{{ project.url }}" class="secondary">
+        <li class="flex max-50 between">
+          <div class="info flex">
+            <p class="muted mr-3">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
+            <p>{{ project.title }}</p>
+          </div>
+          <p>{{ project.type }}</p>
+          {% include icon-arrow.html %}
+        </li>
+      </a>
+    {% endfor %}
+  </div>
 </div>

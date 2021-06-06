@@ -8,13 +8,21 @@ p {
   font-weight: normal;
   margin: 0;
 
-  &.x-large {
+  &.xx-large {
     font-size: 10vw;
+  }
+  &.x-large {
+    font-size: 4em;
   }
   &.large {
     font-size: 2em;
     line-height: 2em;
   }
+  &.medium {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
 
   span {
     &.heading_small {

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "InVision Events"
+type: "Website, Email, Art Direction"
 ---
 # InVision Events
 
