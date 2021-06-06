@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }} | {{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
+  {% include head.html %}
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div class="wrapper" data-scroll-container>
+      {% include navigation.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    {% include scripts.html %}
   </body>
 </html>

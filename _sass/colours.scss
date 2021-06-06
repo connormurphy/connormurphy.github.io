@@ -1,0 +1,19 @@
+$color-off-white: #F0F1F2;
+$color-text: #000;
+$color-text-secondary: #1E1E1E;
+$color-text-muted: #595959;
+
+$color-accent: #043BFF;
+$color-highlight: #D7FF36;
+
+$color-border: #C7C7C7;
+
+.dark {
+  color: $color-text;
+}
+.accent {
+  color: $color-accent;
+}
+.muted {
+  color: $color-text-muted;
+}

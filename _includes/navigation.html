@@ -1,7 +1,31 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
+<div class="section slim no-border flex between center" data-scroll-section>
+  <div class="grid column-25 center grow">
+    <div class="site-title">
+      <a class="secondary" href="/">
+        {% if page.url == '/' %}
+          <h1>{{ site.title }}</h1>
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </a>
+    </div>
+    <p class="role">
+      {{ site.role }}
+      <span class="dash"></span>
+    </p>
+  </div>
+  <ul class="links">
+    <li class="link">
+      <a href="/projects/" class="secondary">
+        Projects <span class="num muted">{{ site.projects | size }}</span>
+      </a>
+    </li>
+    {% for item in site.data.navigation %}
+      <li class="link">
+        <a href="{{ item.link }}" class="secondary{% if page.url == item.link %} active{% endif %}">
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+</div>

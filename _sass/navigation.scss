@@ -1,0 +1,30 @@
+.site-title {
+  h1 {
+    font-size: 1em;
+    font-weight: normal;
+    width: fit-content;
+    display: inline-block;
+    margin: 0;
+  }
+}
+p.role {
+  span {
+    position: relative;
+    width: 60px;
+    display: inline-block;
+    &:after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: $color-text;
+      position: absolute;
+      top: -5px;
+      left: 5px;
+    }
+  }
+}
+.num {
+  font-size: 0.6em;
+  position: relative;
+  top: -8px;
+}

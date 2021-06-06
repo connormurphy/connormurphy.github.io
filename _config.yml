@@ -1,4 +1,11 @@
 title: 'Connor Murphy'
+role: 'Designer'
+email: 'connormurphy@gmail.com'
+url: 'connormurphydesign.com'
+permalink: pretty
 sass:
   sass_dir: _sass
   style: compressed
+collections:
+  projects:
+    output: true

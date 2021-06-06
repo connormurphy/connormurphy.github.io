@@ -2,4 +2,19 @@
 layout: default
 title: 'Home'
 ---
-<h1>{{ "Hello world" | downcase }}</h1>
+<div class="section slim no-border" data-scroll-section>
+  <h2 class="x-large">I’m Connor, a digital designer based in Denver &#9968;</h2>
+</div>
+
+<div class="section" data-scroll-section>
+  <p class="large"> I’m currently working with the fine folks @ <a href="https://shopify.com" class="primary" target="_blank" rel="noopener">Shopify</a>, but have limited availibility for freelance. When I’m not designing, you can catch me outside exploring, hiking Colorado’s famous peaks, searching for the best Hefeweizens, or complaining about Denver's pizza. That’s what being born and raised in New York will do to you.</p>
+</div>
+
+<div class="section" data-scroll-section>
+  <h2>Projects</h2>
+  {% for project in site.projects %}
+    <li>
+      <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+    </li>
+  {% endfor %}
+</div>
