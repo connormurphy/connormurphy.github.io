@@ -18,6 +18,8 @@ body {
 }
 
 a {
+  color: $color-accent;
+  text-decoration: underline;
   &.primary {
     text-decoration: underline;
     color: $color-accent;
