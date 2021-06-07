@@ -19,21 +19,49 @@ title: 'Home'
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large">Projects</h2>
+  <h2 class="x-large">{{ site.data.content.index_projects_heading }}</h2>
   <p class="mt-10 max-40 medium">{{ site.data.content.index_projects | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
   <div class="projects mt-5">
     {% for project in site.projects %}
       <a href="{{ project.url }}" class="secondary">
-        <li class="flex max-50 between">
-          <div class="info flex">
-            <p class="muted mr-3">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
-            <p>{{ project.title }}</p>
-          </div>
+        <li class="project" data-scroll data-scroll-speed="{{ forloop.index }}" data-scroll-delay="{{ forloop.index | divided_by: 10.0 }}">
+          <p class="muted mr-3">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
+          <p>{{ project.title }}</p>
           <p>{{ project.type }}</p>
           {% include icon-arrow.html %}
         </li>
       </a>
     {% endfor %}
+  </div>
+</div>
+
+<div class="section grid" data-scroll-section>
+  <h2 class="x-large">{{ site.data.content.index_process_heading }}</h2>
+  <div class="process mt-5">
+    {% for item in site.data.content.index_process %}
+      <div class="item" data-scroll data-scroll-speed="{{ forloop.index }}" data-scroll-delay="{{ forloop.index | divided_by: 10.0 }}">
+        <p class="mt-2">{{ item.title }}</p>
+        <p class="muted body">{{ item.body }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section slim" data-scroll-section>
+  <p class="medium">{{ site.data.content.index_contact_heading }}</p>
+  <div class="contact-repeat">
+    <a href="mailto:{{ site.email }}" class="secondary">
+      <p class="xx-large" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8">
+        {{ site.data.content.index_contact }}
+        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
+        {{ site.data.content.index_contact }}
+        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
+        {{ site.data.content.index_contact }}
+        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
+        {{ site.data.content.index_contact }}
+        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
+      </p>
+    </a>
   </div>
 </div>

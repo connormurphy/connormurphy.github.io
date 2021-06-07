@@ -17,6 +17,39 @@ body {
   background: $color-highlight;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $color-off-white;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-accent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color-accent, 10); 
+}
+
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $color-accent;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: scale(1) translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+
+  &.active {
+    transform: scale(1.8) translate(-25%, -25%);
+  }
+}
+
 a {
   color: $color-accent;
   text-decoration: underline;
@@ -30,12 +63,39 @@ a {
   }
 }
 
-.projects {
+.projects,
+.process {
   width: 50%;
   justify-self: flex-end;
 
-  li {
+  li.project {
     padding: 3em 0;
     border-bottom: 1px solid $color-border;
+    display: grid;
+    grid-template-columns: 40px 50% 1fr 28px;
+    align-items: center;
+  }
+  .item {
+    padding: 3em 0;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    align-items: flex-start;
+
+    p.body {
+      line-height: 2em;
+    }
+  }
+}
+
+.contact-repeat {
+  padding: 3em 0;
+  width: 110%;
+  position: relative;
+  left: -5%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  span.spacer {
+    margin: 0 0.5em;
   }
 }
