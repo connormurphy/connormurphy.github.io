@@ -72,8 +72,13 @@ a {
     padding: 3em 0;
     border-bottom: 1px solid $color-border;
     display: grid;
-    grid-template-columns: 40px 50% 1fr 28px;
+    grid-template-columns: 28px 50% 1fr 28px;
     align-items: center;
+
+    .num {
+      top: 0;
+      align-self: flex-start;
+    }
   }
   .item {
     padding: 3em 0;

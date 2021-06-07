@@ -26,7 +26,7 @@ title: 'Home'
     {% for project in site.projects %}
       <a href="{{ project.url }}" class="secondary">
         <li class="project" data-scroll data-scroll-speed="{{ forloop.index }}" data-scroll-delay="{{ forloop.index | divided_by: 10.0 }}">
-          <p class="muted mr-3">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
+          <p class="num muted mono">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
           <p>{{ project.title }}</p>
           <p>{{ project.type }}</p>
           {% include icon-arrow.html %}
