@@ -4,17 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _data/content.yml
+  label: Content
+  match: "**/*"
 - type: directory
   path: _projects
   label: Projects
   create: all
   match: "**/*"
-- type: directory
-  path: _data
-  label: Content
-  create: documents
-  match: "**/*"
-  new_doc_ext: ".yml"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
