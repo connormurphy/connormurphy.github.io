@@ -19,23 +19,15 @@ $step: 0.4;
   .m-#{$i} {
     margin: #{$i * $step}em;
   }
-}
-@for $i from 1 through 10 {
   .mt-#{$i} {
     margin-top: #{$i * $step}em;
   }
-}
-@for $i from 1 through 10 {
   .mr-#{$i} {
     margin-right: #{$i * $step}em;
   }
-}
-@for $i from 1 through 10 {
   .mb-#{$i} {
     margin-bottom: #{$i * $step}em;
   }
-}
-@for $i from 1 through 10 {
   .ml-#{$i} {
     margin-left: #{$i * $step}em;
   }

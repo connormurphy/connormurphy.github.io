@@ -3,29 +3,29 @@ layout: default
 title: 'Home'
 ---
 <div class="section slim no-border" data-scroll-section>
-  <h2 class="xx-large">{{ site.data.content.index_heading }}</h2>
+  <h2 class="xx-large">{{ site.data.content.index.headline }}</h2>
 </div>
 
 <div class="section" data-scroll-section>
   <p class="large">
-    <span class="heading_small">{{ site.data.content.index_about_heading }}</span>
-    {{ site.data.content.index_about | markdownify | remove: '<p>' | remove: '</p>' }}
+    <span class="heading_small">{{ site.data.content.index.about.title }}</span>
+    {{ site.data.content.index.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
-  {% if site.data.content.index_about_cta %}
+  {% if site.data.content.index.about.cta %}
     <div class="flex full end mt-5">
-      <a href="/about/" class="primary">{{ site.data.content.index_about_cta }}</a>
+      <a href="/about/" class="primary">{{ site.data.content.index.about.cta }}</a>
     </div>
   {% endif %}
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large">{{ site.data.content.index_projects_heading }}</h2>
-  <p class="mt-10 max-40 medium">{{ site.data.content.index_projects | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  <h2 class="x-large">{{ site.data.content.index.projects.title }}</h2>
+  <p class="mt-4 max-40 medium">{{ site.data.content.index.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
-  <div class="projects mt-5">
+  <div class="projects mt-10">
     {% for project in site.projects %}
       <a href="{{ project.url }}" class="secondary">
-        <li class="project" data-scroll data-scroll-speed="1" data-scroll-delay="{{ forloop.rindex | divided_by: 10.0 }}" data-scroll-repeat>
+        <li class="project">
           <p class="num muted mono ml-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
           <p>{{ project.title }}</p>
           <p>{{ project.type }}</p>
@@ -37,9 +37,9 @@ title: 'Home'
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large">{{ site.data.content.index_process_heading }}</h2>
+  <h2 class="x-large">{{ site.data.content.index.process.title }}</h2>
   <div class="process mt-5">
-    {% for item in site.data.content.index_process %}
+    {% for item in site.data.content.index.process.items %}
       <div class="item" data-scroll data-scroll-speed="{{ forloop.index }}" data-scroll-delay="{{ forloop.index | divided_by: 10.0 }}">
         <p class="mt-2">{{ item.title }}</p>
         <p class="muted body">{{ item.body }}</p>
@@ -49,18 +49,16 @@ title: 'Home'
 </div>
 
 <div class="section slim" data-scroll-section>
-  <p class="medium">{{ site.data.content.index_contact_heading }}</p>
+  <p class="medium">{{ site.data.content.index.contact.title }}</p>
   <div class="contact-repeat">
     <a href="mailto:{{ site.email }}" class="secondary">
-      <p class="xx-large" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8">
-        {{ site.data.content.index_contact }}
-        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
-        {{ site.data.content.index_contact }}
-        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
-        {{ site.data.content.index_contact }}
-        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
-        {{ site.data.content.index_contact }}
-        <span class="spacer">{{ site.data.content.index_contact_spacer }}</span>
+      <p class="xx-large">
+        {{ site.data.content.index.contact.body }}
+        <span class="spacer">{{ site.data.content.index.contact.spacer }}</span>
+        {{ site.data.content.index.contact.body }}
+        <span class="spacer">{{ site.data.content.index.contact.spacer }}</span>
+        {{ site.data.content.index.contact.body }}
+        <span class="spacer">{{ site.data.content.index.contact.spacer }}</span>
       </p>
     </a>
   </div>
