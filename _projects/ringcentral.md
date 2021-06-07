@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "WhenWeWonder"
-type: "Website"
-order: 2
+title: "RingCentral"
+type: "Website, Art Direction"
+order: 3
 ---
-# When We Wonder
+# RingCentral
 
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.

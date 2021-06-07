@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "WhenWeWonder"
+title: "DesignBetter.Co"
 type: "Website"
-order: 2
+order: 4
 ---
-# When We Wonder
+# DesignBetter.Co
 
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
