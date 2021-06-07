@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/content.yml
   label: Content
-  match: "**/*"
 - type: directory
   path: _projects
   label: Projects
