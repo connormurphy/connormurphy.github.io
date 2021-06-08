@@ -15,10 +15,10 @@ sections:
 - type: document
   path: _data/content.yml
   label: Content
-upload_dir: uploads
-public_path: "/uploads"
-front_matter_path: ''
-use_front_matter_path: false
+upload_dir: assets/img
+public_path: "/assets/img"
+front_matter_path: "/assets/img"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:
