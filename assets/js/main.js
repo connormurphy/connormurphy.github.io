@@ -40,3 +40,14 @@ function move() {
 function lerp (start, end, amt) {
   return (1-amt)*start+amt*end;
 }
+
+if (document.querySelector('.project')) {
+  document.querySelectorAll('.project').forEach(function(x) {
+    x.addEventListener('mouseenter', function() {
+      document.querySelector(`#image-${x.getAttribute('data-ref')}`).classList.toggle('active');
+    });
+    x.addEventListener('mouseleave', function() {
+      document.querySelector(`#image-${x.getAttribute('data-ref')}`).classList.toggle('active');
+    });
+  });
+}

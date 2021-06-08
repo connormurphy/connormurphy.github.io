@@ -48,8 +48,8 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: $color-border;
-  transition: height 0.5s, width 0.5s;
-  transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+  transition: height 0.3s, width 0.3s;
+  transition-timing-function: ease-in-out;
   z-index: 2;
   pointer-events: none;
 
@@ -85,6 +85,8 @@ a {
 }
 .projects {
   pointer-events: none;
+  grid-row: 1;
+  width: 100%;
 
   li.project {
     padding: 3em 0;
@@ -128,6 +130,30 @@ a {
     opacity: 1;
   }
 }
+
+.project-thumbnail {
+  width: 85%;
+  height: 500px;
+  grid-row: 1;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
 .process {
   .item {
     padding: 3em 0;
@@ -163,7 +189,7 @@ a {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-65.5%);
+      transform: translateX(-67.3%);
     }
   }
 }

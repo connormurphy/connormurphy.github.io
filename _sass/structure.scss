@@ -57,6 +57,9 @@ li {
   &.column-30 {
     grid-template-columns: 30vw 1fr;
   }
+  &.column-50 {
+    grid-template-columns: 1fr 1fr;
+  }
   &.center {
     align-items: center;
   }
@@ -70,6 +73,9 @@ li {
     border-top: none;
   }
   &.slim {
+    padding: 6em 0;
+  }
+  &.slimmer {
     padding: 2em 0;
   }
 }

@@ -3,6 +3,7 @@ layout: default
 title: "WhenWeWonder"
 type: "Website"
 order: 2
+thumbnail: /assets/img/whenwewander/thumbnail.jpg
 ---
 # When We Wonder
 

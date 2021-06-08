@@ -2,11 +2,11 @@
 layout: default
 title: 'Home'
 ---
-<div class="section slim no-border" data-scroll-section>
-  <h2 class="xx-large">{{ site.data.content.homepage.headline }}</h2>
+<div class="section slimmer no-border" data-scroll-section>
+  <h2 class="xx-large">{{ site.data.content.homepage.headline | replace: '$br', '<br/>' }}</h2>
 </div>
 
-<div class="section" data-scroll-section>
+<div class="section slim" data-scroll-section>
   <p class="large">
     <span class="heading_small">{{ site.data.content.homepage.about.title }}</span>
     {{ site.data.content.homepage.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -22,17 +22,24 @@ title: 'Home'
   <h2 class="x-large">{{ site.data.content.homepage.projects.title }}</h2>
   <p class="mt-4 max-40 medium">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
-  <div class="projects mt-10">
-    {% for project in site.projects %}
-      <a href="{{ project.url }}" class="secondary">
-        <li class="project">
-          <p class="num muted mono ml-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
-          <p>{{ project.title }}</p>
-          <p>{{ project.type }}</p>
-          {% include icon-arrow.html %}
-        </li>
-      </a>
-    {% endfor %}
+  <div class="grid column-50 mt-10">
+    <div class="project-thumbnail mt-8">
+      {% for project in site.projects %}
+        <img src="{{ project.thumbnail }}" id="image-{{ forloop.index }}">
+      {% endfor %}
+    </div>
+    <div class="projects">
+      {% for project in site.projects %}
+        <a href="{{ project.url }}" class="secondary">
+          <li class="project" data-ref="{{ forloop.index }}" data-thumbnail="{{ project.thumbnail }}">
+            <p class="num muted mono ml-1 mt-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
+            <p>{{ project.title }}</p>
+            <p>{{ project.type }}</p>
+            {% include icon-arrow.html %}
+          </li>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -48,7 +55,7 @@ title: 'Home'
   </div>
 </div>
 
-<div class="section slim" data-scroll-section>
+<div class="section slimmer" data-scroll-section>
   <p class="medium">{{ site.data.content.homepage.contact.title }}</p>
   <div class="contact-repeat">
     <a href="mailto:{{ site.email }}" class="secondary">

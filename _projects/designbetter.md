@@ -3,6 +3,7 @@ layout: default
 title: "DesignBetter.Co"
 type: "Website"
 order: 4
+thumbnail: "https://images.pexels.com/photos/8098428/pexels-photo-8098428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 ---
 # DesignBetter.Co
 

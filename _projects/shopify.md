@@ -3,6 +3,7 @@ layout: default
 title: "Shopify"
 type: "Website"
 order: 5
+thumbnail: "https://images.pexels.com/photos/7793766/pexels-photo-7793766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 ---
 # Shopify
 
