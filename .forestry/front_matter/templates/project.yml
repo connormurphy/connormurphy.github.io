@@ -20,3 +20,5 @@ fields:
 - type: file
   name: thumbnail
   label: Thumbnail
+pages:
+- _projects/invision-events.md
