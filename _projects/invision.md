@@ -2,7 +2,7 @@
 layout: default
 title: "InVision Events"
 type: "Website, Email, Art Direction"
-order: 1
+date: 2021-01-01
 thumbnail: "https://images.pexels.com/photos/8096721/pexels-photo-8096721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 ---
 # InVision Events

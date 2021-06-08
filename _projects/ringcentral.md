@@ -2,7 +2,7 @@
 layout: default
 title: "RingCentral"
 type: "Website, Art Direction"
-order: 3
+date: 2021-01-03
 thumbnail: "https://images.pexels.com/photos/4835959/pexels-photo-4835959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 ---
 # RingCentral

@@ -9,4 +9,4 @@ sass:
 collections:
   projects:
     output: true
-    sort_by: order
+    sort_by: date

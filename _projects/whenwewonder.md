@@ -2,7 +2,7 @@
 layout: default
 title: WhenWeWonder
 type: Website
-order: "2"
+date: 2021-01-02
 thumbnail: "/assets/img/whenwewander/thumbnail.jpg"
 
 ---
@@ -16,5 +16,3 @@ distinguishing them from dessert bananas. The fruit is variable in size, color,
 and firmness, but is usually elongated and curved, with soft flesh rich in
 starch covered with a rind, which may be green, yellow, red, purple, or brown
 when ripe.
-
-![](assets/img/81786377-7fb9-4318-88be-c07351cdfe35.JPG)
