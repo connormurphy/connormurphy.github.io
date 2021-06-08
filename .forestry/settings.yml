@@ -16,7 +16,7 @@ sections:
   path: _data/content.yml
   label: Content
 upload_dir: assets/img
-public_path: assets/img
+public_path: "/assets/img"
 front_matter_path: "/assets/img"
 use_front_matter_path: false
 file_template: ":filename:"
