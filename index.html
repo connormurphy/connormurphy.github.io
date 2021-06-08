@@ -25,7 +25,7 @@ title: 'Home'
   <div class="grid column-50 mt-10">
     <div class="project-thumbnail mt-8">
       {% for project in site.projects %}
-        <img src="{{ project.thumbnail }}" id="image-{{ forloop.index }}">
+        <img src="{{ project.thumbnail | relative_url }}" id="image-{{ forloop.index }}">
       {% endfor %}
     </div>
     <div class="projects">

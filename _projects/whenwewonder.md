@@ -3,7 +3,7 @@ layout: default
 title: WhenWeWonder
 type: Website
 date: 2021-01-02
-banner: "/assets/img/whenwewander/thumbnail.jpg"
+thumbnail: "/assets/img/whenwewander/thumbnail.jpg"
 
 ---
 # When We Wonder
