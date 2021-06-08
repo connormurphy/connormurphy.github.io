@@ -21,5 +21,6 @@ fields:
   name: thumbnail
   label: Thumbnail
 pages:
+- _projects/designbetter.co.md
 - _projects/invision-events.md
 - _projects/ringcentral.md
