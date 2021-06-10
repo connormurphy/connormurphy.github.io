@@ -44,11 +44,12 @@ function lerp (start, end, amt) {
 if (document.querySelector('.project')) {
   document.querySelectorAll('.project').forEach(function(x) {
     x.addEventListener('mouseenter', function() {
-      document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.toggle('active');
+      document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.add('active');
     });
     x.addEventListener('mouseleave', function() {
+      document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.replace('active', 'deactive');
       setTimeout(function() {
-        document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.remove('active');
+        document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.remove('deactive')
       },600);
     });
   });
