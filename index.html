@@ -23,9 +23,11 @@ title: 'Home'
   <p class="mt-4 max-40 medium">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
   <div class="grid column-50 mt-10">
-    <div class="project-thumbnail mt-8">
+    <div class="project-thumbnail direction_right mt-8">
       {% for project in site.projects %}
-        <img src="{{ project.thumbnail | relative_url }}" id="image-{{ forloop.index }}">
+        <div class="slide" id="slide-{{ forloop.index }}">
+          <img src="{{ project.thumbnail | relative_url }}">
+        </div>
       {% endfor %}
     </div>
     <div class="projects">

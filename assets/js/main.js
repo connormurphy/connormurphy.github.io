@@ -44,10 +44,12 @@ function lerp (start, end, amt) {
 if (document.querySelector('.project')) {
   document.querySelectorAll('.project').forEach(function(x) {
     x.addEventListener('mouseenter', function() {
-      document.querySelector(`#image-${x.getAttribute('data-ref')}`).classList.toggle('active');
+      document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.toggle('active');
     });
     x.addEventListener('mouseleave', function() {
-      document.querySelector(`#image-${x.getAttribute('data-ref')}`).classList.toggle('active');
+      setTimeout(function() {
+        document.querySelector(`#slide-${x.getAttribute('data-ref')}`).classList.remove('active');
+      },600);
     });
   });
 }
