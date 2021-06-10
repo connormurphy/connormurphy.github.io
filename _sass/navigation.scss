@@ -22,9 +22,77 @@ p.role {
       left: 5px;
     }
   }
+  &.white {
+    span:after {
+      background: $color-white;
+    }
+  }
+  &.bottom {
+    position: absolute;
+    bottom: 1.6em;
+  }
 }
 .num {
   font-size: 0.8em;
   position: relative;
   top: -8px;
+}
+.mobile-menu {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-family: $font-main;
+  cursor: pointer;
+}
+
+.nav_links {
+  @media screen and (max-width: $mobile) {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: $color-text;
+    color: $color-white;
+    top: 0;
+    right: -100%;
+    z-index: 99;
+    padding: 1.6em;
+    transition: right 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+
+    &.active {
+      right: 0;
+    }
+
+    a.secondary {
+      color: $color-white;
+    }
+    button {
+      color: $color-white;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      li {
+        font-size: 2em;
+        padding: 1em 0;
+        margin-left: 0;
+
+        .num {
+          font-size: 0.4em;
+          color: #E7E7E7;
+          top: -14px;
+        }
+      }
+    }
+  }
 }

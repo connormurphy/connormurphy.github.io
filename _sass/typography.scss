@@ -11,17 +11,36 @@ p {
   &.xx-large {
     font-size: 11em;
     line-height: 1em;
+    @media only screen and (max-width: $mid-tablet) {
+      font-size: 11vw;
+    }
+    @media only screen and (max-width: $mobile) {
+      font-size: 3.73em;
+      line-height: 1.1em;
+    }
   }
   &.x-large {
     font-size: 4em;
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 2.7em;
+    }
   }
   &.large {
     font-size: 2em;
     line-height: 1.6em;
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 1.5em;
+    }
   }
   &.medium {
     font-size: 1.2em;
     line-height: 1.6em;
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 1.1em;
+    }
   }
   &.mono {
     font-family: 'Roboto Mono', monospace;
@@ -32,6 +51,11 @@ p {
     &.heading_small {
       font-size: 0.5em;
       margin-right: 5em;
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 0.6em;
+        margin-right: 4em;
+      }
     }
   }
 }

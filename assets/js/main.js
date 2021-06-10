@@ -54,3 +54,9 @@ if (document.querySelector('.project')) {
     });
   });
 }
+
+document.querySelectorAll('.mobile-menu').forEach(function(x) {
+  x.addEventListener('click', function() {
+    document.querySelector('.nav_links').classList.toggle('active');
+  });
+});

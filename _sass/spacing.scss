@@ -18,17 +18,32 @@ $step: 0.4;
 @for $i from 1 through 10 {
   .m-#{$i} {
     margin: #{$i * $step}em;
+    @media only screen and (max-width: $mobile) {
+      margin: #{($i * $step)/ 2}em;
+    }
   }
   .mt-#{$i} {
     margin-top: #{$i * $step}em;
+    @media only screen and (max-width: $mobile) {
+      margin-top: #{($i * $step)/ 2}em;
+    }
   }
   .mr-#{$i} {
     margin-right: #{$i * $step}em;
+    @media only screen and (max-width: $mobile) {
+      margin-right: #{($i * $step)/ 2}em;
+    }
   }
   .mb-#{$i} {
     margin-bottom: #{$i * $step}em;
+    @media only screen and (max-width: $mobile) {
+      margin-bottom: #{($i * $step)/ 2}em;
+    }
   }
   .ml-#{$i} {
     margin-left: #{$i * $step}em;
+    @media only screen and (max-width: $mobile) {
+      margin-left: #{($i * $step)/ 2}em;
+    }
   }
 }

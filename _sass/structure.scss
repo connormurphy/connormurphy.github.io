@@ -1,3 +1,18 @@
+$mid-tablet: '1465px';
+$tablet: '1024px';
+$mobile: '768px';
+
+.mobile-hide {
+  @media only screen and (max-width: $mobile) {
+    display: none !important;
+  }
+}
+.mobile-only {
+  @media only screen and (min-width: $mobile) {
+    display: none !important;
+  }
+}
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -63,6 +78,12 @@ li {
   &.center {
     align-items: center;
   }
+
+  &.mobile-100 {
+    @media only screen and (max-width: $mobile) {
+      display: block;
+    }
+  }
 }
 
 .section {
@@ -74,12 +95,24 @@ li {
   }
   &.slim {
     padding: 6em 0;
+
+    @media only screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
   }
   &.slimmer {
+    padding: 2em 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
     padding: 2em 0;
   }
 }
 
 .max-40 {
   max-width: 40%;
+
+  @media only screen and (max-width: $mobile) {
+    max-width: unset;
+  }
 }

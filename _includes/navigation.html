@@ -1,5 +1,5 @@
 <div class="section slimmer no-border flex between center" data-scroll-section>
-  <div class="grid column-25 center grow">
+  <div class="grid column-25 mobile-100 center grow">
     <div class="site-title">
       <a class="secondary" href="/">
         {% if page.url == '/' %}
@@ -9,23 +9,36 @@
         {% endif %}
       </a>
     </div>
-    <p class="role">
-      {{ site.role }}
+    <p class="role mobile-hide">
+      {{ site.data.content.navigation.job_title }}
       <span class="dash"></span>
     </p>
   </div>
-  <ul class="links">
-    <li class="link">
-      <a href="/projects/" class="secondary">
-        Projects <span class="num muted mono">{{ site.projects | size }}</span>
+  <button class="mobile-menu mobile-only">Menu</button>
+  <div class="nav_links">
+    <div class="flex between mobile-only">
+      <a href="/" class="secondary">
+        <p>{{ site.title }}</p>
       </a>
-    </li>
-    {% for item in site.data.navigation %}
+      <button class="mobile-menu">Close</button>
+    </div>
+    <ul class="links">
       <li class="link">
-        <a href="{{ item.link }}" class="secondary{% if page.url == item.link %} active{% endif %}">
-          {{ item.name }}
+        <a href="/projects/" class="secondary">
+          Projects <span class="num muted mono">{{ site.projects | size }}</span>
         </a>
       </li>
-    {% endfor %}
+      {% for item in site.data.content.navigation.menu %}
+        <li class="link">
+          <a href="{{ item.link }}" class="secondary{% if page.url == item.link %} active{% endif %}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
+    <p class="role bottom white mobile-only">
+      {{ site.data.content.navigation.job_title }}
+      <span class="dash"></span>
+    </p>
+  </div>
 </div>

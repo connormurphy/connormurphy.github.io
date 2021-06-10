@@ -1,3 +1,11 @@
+navigation:
+  job_title: "Designer"
+  menu:
+    - name: About
+      link: /about
+    - name: Contact
+      link: /contact
+
 homepage:
   headline: "I’m Connor, a$br digital designer based in Denver &#9968;"
   about:
