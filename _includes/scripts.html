@@ -3,10 +3,10 @@
 <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 <script src="/assets/js/locomotive-scroll.min.js"></script>
 <script>
-    (function () {
-        var scroll = new LocomotiveScroll({
-          el: document.querySelector('[data-scroll-container]'),
-          smooth: true
-        });
-    })();
+  window.addEventListener('load', function() {
+    var scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+  });
 </script>

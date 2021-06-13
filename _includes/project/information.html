@@ -13,7 +13,7 @@
       {% for contributer in page.contributers %}
       <li class="contributer">
         <p class="mb-1 muted">{{ contributer.role }}</p>
-        {% if contributer.url %}
+        {% if contributer.url != '' %}
           <a href="{{ contributer.url }}" class="muted" target="_blank" rel="noopener nofollow">
             {{ contributer.name }}
           </a>

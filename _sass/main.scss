@@ -312,6 +312,11 @@ a {
     line-height: 1.6em;
     margin-bottom: 2em;
   }
+  h2 {
+    &:last-of-type {
+      margin-bottom: 1em;
+    }
+  }
   img {
     width: 100%;
     display: block;
