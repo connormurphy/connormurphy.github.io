@@ -23,7 +23,6 @@ contributions:
 - label: Moved some stickies
 date: 2021-06-14T04:00:00.000+00:00
 thumbnail: "/assets/img/2021/06/13/frame-6.jpg"
-published: false
 
 ---
 I did some work for Shopify.
