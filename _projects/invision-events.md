@@ -1,5 +1,5 @@
 ---
-layout: 'project'
+layout: project
 title: Invision Events
 listing_type: Website, Email, Art Direction
 type: Landing page
