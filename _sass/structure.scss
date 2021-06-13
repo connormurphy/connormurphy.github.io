@@ -12,6 +12,33 @@ $mobile: '768px';
     display: none !important;
   }
 }
+.mobile-block {
+  @media only screen and (max-width: $mobile) {
+    display: block !important;
+
+    div {
+      margin-bottom: 3em;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+button.plain {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-family: $font-main;
+  cursor: pointer;
+
+  &.large {
+    font-size: 1.5em;
+  }
+}
 
 ul {
   padding: 0;
@@ -103,6 +130,22 @@ li {
 
   @media only screen and (max-width: $mobile) {
     padding: 2em 0;
+  }
+
+  &.mobile-collapse {
+    @media only screen and (max-width: $mobile) {
+      height: 0;
+      padding: 0;
+      border-top: none;
+      overflow: hidden;
+  
+      &.active {
+        height: fit-content;
+        padding: inherit;
+        padding: 2em 0;
+        border-top: 1px solid $color-border;
+      }
+    }
   }
 }
 

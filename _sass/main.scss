@@ -306,6 +306,10 @@ a {
 .project-content {
   h2,h3,p {
     width: 50%;
+
+    @media only screen and (max-width: $mobile) {
+      width: 100%;
+    }
   }
   p {
     font-size: 1.1em;
@@ -325,6 +329,10 @@ a {
 
     &.half {
       width: 50%;
+
+      @media only screen and (max-width: $mobile) {
+        width: 100%;
+      }
     }
     &.right {
       margin-left: auto;
@@ -332,6 +340,70 @@ a {
     &.center {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    h2 {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.project-pagination-title {
+  @media only screen and (max-width: $mobile) {
+    font-size: 2em !important;
+  }
+}
+.arrow {
+  @media only screen and (max-width: $mobile) {
+    height: 24px;
+    width: 24px;
+  }
+}
+button#project-brief-trigger {
+  padding: 0;
+
+  @media only screen and (min-width: $mobile) {
+    pointer-events: none;
+    cursor: text;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-right: 28px;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 2px;
+      width: 18px;
+      background: $color-text;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    &:before {
+      content: "";
+      height: 18px;
+      width: 2px;
+      background: $color-text;
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+    }
+
+    &.active {
+      &:before {
+        display: none;
+      }
     }
   }
 }

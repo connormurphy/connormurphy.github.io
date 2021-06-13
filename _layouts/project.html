@@ -9,12 +9,12 @@
       {% include project/count.html %}
       
       <h1 class="xx-large" data-scroll-section>{{ page.title }}</h1>
-      <div class="section slimmer flex between mt-5" data-scroll-section>
+      <div class="section slimmer flex between center mt-5" data-scroll-section>
         <p class="large">{{ current_index | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}</p>
-        <p class="large">Project Brief</p>
+        <button id="project-brief-trigger" class="plain large">Project Brief</button>
       </div>
       
-      {% include project/information.html %}
+      {% include project/brief.html %}
 
       <div class="section slimmer project-content" data-scroll-section>
         {{ content }}

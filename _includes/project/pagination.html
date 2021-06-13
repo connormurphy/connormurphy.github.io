@@ -3,7 +3,7 @@
   <a href="{{ page.previous.url }}" class="secondary grid">
     <div class="flex center">
       {% include icons/icon-arrow-left.html %}
-      <p class="x-large ml-1">Previous</p>
+      <p class="x-large project-pagination-title ml-1">Previous</p>
     </div>
     <p class="mt-2">{{ page.previous.title }}
       {{ current_index | minus: 1 | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}
@@ -15,8 +15,8 @@
 
   {% if page.next %}
     <a href="{{ page.next.url }}" class="secondary grid">
-      <div class="flex center">
-        <p class="x-large mr-1">Next</p>
+      <div class="flex center end">
+        <p class="x-large project-pagination-title mr-1">Next</p>
         {% include icons/icon-arrow-right.html %}
       </div>
       <p class="align-right mt-2">{{ page.next.title }}

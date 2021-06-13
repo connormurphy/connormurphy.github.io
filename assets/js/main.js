@@ -60,3 +60,8 @@ document.querySelectorAll('.mobile-menu').forEach(function(x) {
     document.querySelector('.nav_links').classList.toggle('active');
   });
 });
+
+document.getElementById('project-brief-trigger').addEventListener('click', function() {
+  document.getElementById('project-brief-trigger').classList.toggle('active');
+  document.getElementById('project-brief').classList.toggle('active');
+});

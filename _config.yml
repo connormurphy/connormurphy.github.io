@@ -9,3 +9,4 @@ collections:
   projects:
     output: true
     sort_by: date
+    permalink: /:collection/:path/

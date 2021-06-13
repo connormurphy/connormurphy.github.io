@@ -33,7 +33,9 @@ thumbnail: "/assets/img/2021/06/13/thumbnail.jpg"
 ---
 Most recently, I created an events hub for InVision. We had all these great events, but they were scattered and hard to find. We wanted to create a simple page that houses all of our events that’s easily accessible from our website.   
   
-Design+, webinars, Design Talks, Fireside chats. InVision did it all, hosting every kind of virtual and IRL event to empower and educate designers. Eventually, the lines got a bit blurred. These events were scattered across different site pages, hard to find, and the niche branding associated with them faded as time went on. To reflect InVision’s updated programming and demand generation strategy, I created a new hub that consolidated and united ongoing events. We aimed to keep it simple, easy to find and understand, and even easier to sign up and join.
+Design+, webinars, Design Talks, Fireside chats. InVision did it all, hosting every kind of virtual and IRL event to empower and educate designers. Eventually, the lines got a bit blurred. These events were scattered across different site pages, hard to find, and the niche branding associated with them faded as time went on.
+
+To reflect InVision’s updated programming and demand generation strategy, I created a new hub that consolidated and united ongoing events. We aimed to keep it simple, easy to find and understand, and even easier to sign up and join.
 
 ![](/assets/img/2021/06/13/events-final-1x.jpg)
 
