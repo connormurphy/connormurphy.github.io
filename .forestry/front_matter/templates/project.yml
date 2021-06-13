@@ -6,6 +6,7 @@ fields:
   name: layout
   label: layout
   hidden: true
+  default: project
 - type: text
   name: title
   label: Name
