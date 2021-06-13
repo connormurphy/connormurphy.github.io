@@ -1,0 +1,6 @@
+{% assign current_index = 0 %}
+{% for project in site.projects %}
+  {% if project.title == page.title %}
+    {% assign current_index = forloop.index %}
+  {% endif %}
+{% endfor %}

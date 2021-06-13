@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="cursor" class="mobile-hide"></div>
+    <div class="wrapper" data-scroll-container>
+      {% include navigation.html %}
+
+      {% include project/count.html %}
+      
+      <h1 class="xx-large" data-scroll-section>{{ page.title }}</h1>
+      <div class="section slimmer flex between mt-5" data-scroll-section>
+        <p class="large">{{ current_index | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}</p>
+        <p class="large">Project Brief</p>
+      </div>
+      
+      {% include project/information.html %}
+
+      <div class="section project-content" data-scroll-section>
+        {{ content }}
+      </div>
+
+      {% include project/pagination.html %}
+
+      {% include footer.html %}
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

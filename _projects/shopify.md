@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: projects
 title: Shopify
-type: Website
-date: 2021-01-05 05:00:00 +0000
-thumbnail: "/assets/img/2021/06/08/bakd-raw-xvvpqfgloye-unsplash.jpg"
+listing_type: Website, Email, Art Direction
+date: 2021-01-01 05:00:00 +0000
+thumbnail: "/assets/img/2021/06/08/matthew-reyes-c-jtjc0g7i-unsplash.jpg"
 
 ---
-# Shopify
 
 A banana is an edible fruit – botanically a berry – produced by several kinds
 

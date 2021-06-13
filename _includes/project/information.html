@@ -1,0 +1,37 @@
+<div class="section slimmer flex between" data-scroll-section>
+  <div class="column">
+    <h3 class="mb-3">Project Timeline</h3>
+    <p class="muted">{{ page.timeline }}</p>
+  </div>
+  <div class="column">
+    <h3 class="mb-3">Project Type</h3>
+    <p class="muted">{{ page.type }}</p>
+  </div>
+  <div class="column">
+    <h3 class="mb-3">Contributers</h3>
+    <ul class="contributers">
+      {% for contributer in page.contributers %}
+      <li class="contributer">
+        <p class="mb-1 muted">{{ contributer.role }}</p>
+        {% if contributer.url %}
+          <a href="{{ contributer.url }}" class="muted" target="_blank" rel="noopener nofollow">
+            {{ contributer.name }}
+          </a>
+        {% else %}
+          <p class="muted">{{ contributer.name }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="mb-3">My Contribution</h3>
+    <ul>
+      {% for contribution in page.contributions %}
+        <li class="mb-2">
+          <p class="muted">{{ contribution.label }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

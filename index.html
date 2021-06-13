@@ -36,8 +36,8 @@ title: 'Home'
           <li class="project" data-ref="{{ forloop.index }}" data-thumbnail="{{ project.thumbnail }}">
             <p class="num muted mono ml-1 mt-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
             <p>{{ project.title }}</p>
-            <p class="mobile-hide">{{ project.type }}</p>
-            {% include icon-arrow.html %}
+            <p class="mobile-hide">{{ project.listing_type }}</p>
+            {% include icons/icon-arrow.html %}
           </li>
         </a>
       {% endfor %}
