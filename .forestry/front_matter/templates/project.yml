@@ -5,41 +5,48 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Name
 - type: text
   name: listing_type
-  label: listing_type
+  label: Categories
+  description: 'Example: Art Direction, Website Design, etc.'
 - type: text
   name: type
-  label: type
+  label: Type
+  description: 'Example: Landing page'
 - type: text
   name: timeline
   label: timeline
 - type: field_group_list
   name: contributers
-  label: contributers
+  label: Contributers
   fields:
   - type: text
     name: role
-    label: role
+    label: Contributor Role
   - type: text
     name: name
-    label: name
+    label: Contributor Name
   - type: text
     name: url
-    label: url
+    label: Contributor Website
+    description: "<em>Optional</em>"
+  description: People who participated in the project.
 - type: field_group_list
   name: contributions
-  label: contributions
+  label: My Contributions
   fields:
   - type: text
     name: label
-    label: label
+    label: Label
 - type: datetime
   name: date
-  label: date
+  label: Date
+  description: Projects are ordered by date (oldest first), and the date is never
+    visible.
 - type: file
   name: thumbnail
-  label: thumbnail
+  label: Thumbnail Image
