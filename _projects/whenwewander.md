@@ -1,5 +1,5 @@
 ---
-layout: "'project'"
+layout: project
 title: WhenWeWander
 listing_type: Website Design, Art Direction
 type: Landing page
