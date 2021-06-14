@@ -134,13 +134,15 @@ li {
 
   &.mobile-collapse {
     @media only screen and (max-width: $mobile) {
-      height: 0;
+      height: fit-content;
+      max-height: 0;
       padding: 0;
-      border-top: none;
+      border-top-color: transparent;
       overflow: hidden;
+      transition: all 0.6s ease-in-out;
   
       &.active {
-        height: fit-content;
+        max-height: 2000px;
         padding: inherit;
         padding: 2em 0;
         border-top: 1px solid $color-border;
