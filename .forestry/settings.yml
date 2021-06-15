@@ -20,6 +20,10 @@ sections:
   path: index.html
   label: Homepage
   match: "**/*"
+- type: document
+  path: contact.html
+  label: Contact
+  match: "**/*"
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: "/assets/img"
