@@ -2,27 +2,34 @@
   layout: default
   title: Projects
 ---
-<div class="section grid column-50 mobile-block center between" data-scroll-section>
+<div class="section grid column-55 mobile-block center between" data-scroll-section>
   <h1 class="xx-large">{{ site.data.content.homepage.projects.title }}</h1>
   <p class="medium mt-4">{{ site.data.content.homepage.projects.body | markdownify | remove: "<p>" | remove: "</p>" }}</p>
 </div>
 
 {% for project in site.projects %}
-  <div class="section slim no-border grid column-50" data-scroll-section>
+  <div class="section slim no-border grid column-55 mobile-block" data-scroll-section>
     <div class="thumbnail pr-5">
       <img src="{{ project.thumbnail }}">
     </div>
-    <div class="project-info pt-4 pb-4">
-      <div class="flex between mb-4">
-        <p class="muted mono small">/00-{{ forloop.index }}</p>
-        <p class="muted mono small">/00-{{ site.projects | size }}</p>
+    <div class="project-info flex vertical between pt-4">
+      <div class="top">
+        <div class="count flex between mb-4">
+          <p class="muted mono small">/00-{{ forloop.index }}</p>
+          <p class="muted mono small">/00-{{ site.projects | size }}</p>
+        </div>
+        <a class="secondary flex between center" href="{{ project.url }}">
+          <p class="large">{{ project.title }}</p>
+          {% capture size %}20{% endcapture %}
+          {% include icons/icon-arrow-right.html %}
+        </a>
+        <div class="project-description">
+          <p class="mt-4">{{ project.description }}</p>
+        </div>
       </div>
-      <a class="secondary flex between center" href="{{ project.url }}">
-        <p class="large">{{ project.title }}</p>
-        {% capture size %}20{% endcapture %}
-        {% include icons/icon-arrow-right.html %}
-      </a>
-      <p class="mt-4">{{ project.description }}</p>
+      <div class="bottom">
+        <p class="muted">{{ project.listing_type }}</p>
+      </div>
     </div>
   </div>
 {% endfor %}

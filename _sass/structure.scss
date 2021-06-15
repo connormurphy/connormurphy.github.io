@@ -66,6 +66,9 @@ li {
 
 .flex {
   display: flex;
+  &.vertical {
+    flex-direction: column;
+  }
   &.between {
     justify-content: space-between;
   }
@@ -103,6 +106,15 @@ li {
   }
   &.column-50 {
     grid-template-columns: 1fr 1fr;
+  }
+  &.column-55 {
+    grid-template-columns: 55vw 1fr;
+  }
+  &.column-60 {
+    grid-template-columns: 60vw 1fr;
+  }
+  &.column-70 {
+    grid-template-columns: 70vw 1fr;
   }
   &.center {
     align-items: center;
