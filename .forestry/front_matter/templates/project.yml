@@ -21,6 +21,9 @@ fields:
   label: Type
   description: 'Example: Landing page'
 - type: text
+  name: description
+  label: Short Description
+- type: text
   name: timeline
   label: timeline
 - type: field_group_list

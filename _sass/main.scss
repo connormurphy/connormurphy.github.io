@@ -408,6 +408,18 @@ button#project-brief-trigger {
   }
 }
 
+.thumbnail {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.project-info {
+  min-height: 100%;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
 .footer {
   p:first-of-type {
     max-width: 70%;

@@ -3,6 +3,7 @@ layout: project
 title: Shopify
 listing_type: Website design
 type: Landing page
+description: Agency website design for the folks over at WhenWeWonder.
 timeline: January 2021-April 2021
 contributers:
 - name: Connell McCarthy

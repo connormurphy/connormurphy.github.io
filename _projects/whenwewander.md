@@ -3,6 +3,7 @@ layout: project
 title: WhenWeWander
 listing_type: Website Design, Art Direction
 type: Landing page
+description: Agency website design for the folks over at WhenWeWonder.
 timeline: Soemthing 2019-Something 2020
 contributers:
 - role: Designer
