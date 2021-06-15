@@ -22,7 +22,7 @@ contributions:
 - label: Figured out what car shopify is
 - label: Moved some stickies
 date: 2021-06-13T09:00:00.000+00:00
-thumbnail: "/assets/img/2021/06/13/shopify.png"
+thumbnail: "/assets/img/shopify.png"
 
 ---
 I did some work for Shopify.
