@@ -29,5 +29,16 @@ homepage:
     body: "Contact me"
     spacer: "•"
 
+contact:
+    email: "connormurphydesign@gmail.com"
+    socials:
+        - label: 'Twitter'
+          url: 'https://twitter.com'
+        - label: 'Instagram'
+          url: 'https://instagram.com'
+        - label: 'Linkedin'
+          url: 'https://linkedin.com'
+    phone: '+15857397475'
+
 footer:
   copyright: "Copyright and all that."

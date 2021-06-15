@@ -414,3 +414,24 @@ button#project-brief-trigger {
     line-height: 1.5em;
   }
 }
+
+.contact {
+  @media only screen and (max-width: $mobile) {
+    &.full-height {
+      min-height: unset;
+      text-align: center;
+    }
+    ul.inline {
+      li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2em;
+      }
+      margin-bottom: calc(100vh - 400px);
+    }
+    &.flex {
+      display: block;
+      text-align: center;
+    }
+  }
+}

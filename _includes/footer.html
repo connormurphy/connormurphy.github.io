@@ -1,4 +1,19 @@
-<div class="section slimmer footer flex between center" data-scroll-section>
-  <p>{{ site.title }}. {{ site.data.content.footer.copyright | markdownify | remove: '<p>' | remove: '</p>' }} Built by <a class="dark" href="https://boandco.studio/?ref={{ site.url }}" target="_blank" rel="noopener nofollow">Bo & Co</a></a></p>
-  <p class="mobile-hide">{{ site.url }}</p>
-</div>
+{% if page.title == 'Contact' %}
+  <div class="section slimmer contact no-border flex between center" data-scroll-section>
+    <ul class="socials inline">
+      {% for site in site.data.content.contact.socials %}
+        <li>
+          <a class="secondary" href="{{ site.url }}" target="_blank" rel="noopener nofollow">
+            {{ site.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>{{ site.data.content.contact.phone }}</p>
+  </div>
+{% else %}
+  <div class="section slimmer footer flex between center" data-scroll-section>
+    <p>{{ site.title }}. {{ site.data.content.footer.copyright | markdownify | remove: '<p>' | remove: '</p>' }} Built by <a class="dark" href="https://boandco.studio/?ref={{ site.url }}" target="_blank" rel="noopener nofollow">Bo & Co</a></a></p>
+    <p class="mobile-hide">{{ site.url }}</p>
+  </div>
+{% endif %}
