@@ -14,6 +14,12 @@ sections:
 - type: document
   path: _data/content.yml
   label: Content
+- type: heading
+  label: Pages
+- type: document
+  path: index.html
+  label: Homepage
+  match: "**/*"
 upload_dir: assets/img
 public_path: "/assets/img"
 front_matter_path: "/assets/img"
