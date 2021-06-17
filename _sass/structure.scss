@@ -26,6 +26,16 @@ $mobile: '768px';
   }
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 button.plain {
   -webkit-appearance: none;
   appearance: none;
@@ -103,6 +113,12 @@ li {
   }
   &.column-30 {
     grid-template-columns: 30vw 1fr;
+  }
+  &.column-40 {
+    grid-template-columns: 40vw 1fr;
+  }
+  &.column-45 {
+    grid-template-columns: 45vw 1fr;
   }
   &.column-50 {
     grid-template-columns: 1fr 1fr;
@@ -188,5 +204,20 @@ li {
 
   @media only screen and (max-width: $mobile) {
     max-width: unset;
+  }
+}
+
+.border {
+  &-top {
+    border-top: 1px solid $color-border;
+  }
+  &-bottom {
+    border-bottom: 1px solid $color-border;
+  }
+  &-left {
+    border-left: 1px solid $color-border;
+  }
+  &-right {
+    border-right: 1px solid $color-border;
   }
 }

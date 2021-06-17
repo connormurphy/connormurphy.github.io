@@ -75,7 +75,8 @@ a {
 }
 
 .projects,
-.process {
+.process,
+.experience {
   width: 50%;
   justify-self: flex-end;
   position: relative;
@@ -423,8 +424,8 @@ button#project-brief-trigger {
   border-top: 1px solid $color-border;
 
   @media only screen and (max-width: $mobile) {
-    border-top: none;
-    
+    margin-top: 3em;
+
     .count {
       margin-bottom: 1em;
     }

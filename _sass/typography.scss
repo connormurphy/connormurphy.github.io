@@ -49,6 +49,11 @@ p {
     font-family: 'Roboto Mono', monospace;
   }
 
+  &.fit-content {
+    display: block;
+    width: fit-content;
+  }
+
 
   span {
     &.heading_small {

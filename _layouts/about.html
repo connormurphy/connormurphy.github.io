@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div id="cursor" class="mobile-hide"></div>
+    <div class="wrapper" data-scroll-container>
+      {% include navigation.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

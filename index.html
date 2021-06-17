@@ -8,12 +8,12 @@ title: 'Home'
 
 <div class="section slim" data-scroll-section>
   <p class="large">
-    <span class="heading_small">{{ site.data.content.homepage.about.title }}</span>
-    {{ site.data.content.homepage.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
+    <span class="heading_small">{{ site.data.content.about.title }}</span>
+    {{ site.data.content.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
-  {% if site.data.content.homepage.about.cta %}
+  {% if site.data.content.about.cta %}
     <div class="flex full end mt-5">
-      <a href="/about/" class="primary">{{ site.data.content.homepage.about.cta }}</a>
+      <a href="/about/" class="primary">{{ site.data.content.about.cta }}</a>
     </div>
   {% endif %}
 </div>
@@ -57,18 +57,4 @@ title: 'Home'
   </div>
 </div>
 
-<div class="section slimmer" data-scroll-section>
-  <p class="medium">{{ site.data.content.homepage.contact.title }}</p>
-  <div class="contact-repeat">
-    <a href="mailto:{{ site.data.content.contact.email }}" class="secondary">
-      <p>
-        {{ site.data.content.homepage.contact.body }}
-        <span class="spacer">{{ site.data.content.homepage.contact.spacer }}</span>
-        {{ site.data.content.homepage.contact.body }}
-        <span class="spacer">{{ site.data.content.homepage.contact.spacer }}</span>
-        {{ site.data.content.homepage.contact.body }}
-        <span class="spacer">{{ site.data.content.homepage.contact.spacer }}</span>
-      </p>
-    </a>
-  </div>
-</div>
+{% include contact.html %}
