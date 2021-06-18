@@ -44,6 +44,23 @@ about:
   cta: "More"
   experience:
     title: "Experience"
+    jobs:
+      - company: Shopify
+        role: Senior Designer
+        from_date: December 2020
+        to_date:  Present
+      - company: InVision
+        role: Designer
+        from_date: May 2015
+        to_date: March 2020
+      - company: Hungry
+        role: Designer
+        from_date: October 2014
+        to_date: May 2015
+      - company: Maker's Row
+        role: Designer
+        from_date: March 2014
+        to_date: August 2014
 
 footer:
   copyright: "Copyright and all that."

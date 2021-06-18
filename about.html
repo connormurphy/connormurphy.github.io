@@ -5,7 +5,7 @@
 
 <h1 class="visually-hidden">{{ site.data.content.about.title }}</h1>
 
-<div class="section slimmer no-border grid column-45" data-scroll-section>
+<div class="section slimmer no-border grid column-45 mobile-block" data-scroll-section>
   <div class="thumbnail pr-6">
     <img src="{{ site.data.content.about.image }}">
   </div>
@@ -22,25 +22,27 @@
   </div>
 </div>
 
-<div class="section slim grid" data-scroll-section>
+<div class="section slim grid mobile-block" data-scroll-section>
   <p class="small muted mono mb-4">/00-2</p>
   <h2 class="x-large">{{ site.data.content.about.experience.title }}</h2>
 
   <ul class="experience">
+    {% for job in site.data.content.about.experience.jobs %}
     <li class="pt-6 pb-6 border-bottom flex between center">
       <div class="title">
-        <p>Senior Designer</p>
-        <p class="muted mt-2">Shopify</p>
+        <p>{{ job.role }}</p>
+        <p class="muted mt-4">{{ job.company }}</p>
       </div>
       <div class="time flex center">
-        <p class="mr-2">December 2020</p>
+        <p class="mr-2">{{ job.from_date }}</p>
         {% capture size %}20{% endcapture %}
         {% include icons/icon-arrow-right.html %}
-        <p class="ml-2">Present</p>
+        <p class="ml-2">{{ job.to_date }}</p>
       </div>
     </li>
+    {% endfor %}
   </ul>
-  <a href="/assets/resume.pdf">
+  <a class="align-right" href="/assets/resume.pdf">
     <p class="large fit-content right">Download Resume</p>
   </a>
 </div>

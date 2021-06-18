@@ -432,6 +432,12 @@ button#project-brief-trigger {
   }
 }
 
+a.align-right {
+  display: inline-block;
+  width: fit-content;
+  justify-self: end;
+}
+
 .footer {
   p:first-of-type {
     max-width: 70%;
