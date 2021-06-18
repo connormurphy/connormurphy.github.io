@@ -438,6 +438,15 @@ a.align-right {
   justify-self: end;
 }
 
+.experience {
+  svg.arrow {
+    @media only screen and (max-width: $mobile) {
+      height: 18px !important;
+      width: 18px !important;
+    }
+  }
+}
+
 .footer {
   p:first-of-type {
     max-width: 70%;

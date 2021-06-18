@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="section slim grid mobile-block" data-scroll-section>
+<div class="section slim grid mobile-block no-margin" data-scroll-section>
   <p class="small muted mono mb-4">/00-2</p>
   <h2 class="x-large">{{ site.data.content.about.experience.title }}</h2>
 
@@ -34,10 +34,20 @@
         <p class="muted mt-4">{{ job.company }}</p>
       </div>
       <div class="time flex center">
-        <p class="mr-2">{{ job.from_date }}</p>
+        <p class="mr-2">
+          {% assign date = job.from_date | split: ' ' %}
+          <span class="mobile-hide">{{ date[0] }}</span> {{ date[1] }}
+        </p>
         {% capture size %}20{% endcapture %}
         {% include icons/icon-arrow-right.html %}
-        <p class="ml-2">{{ job.to_date }}</p>
+        <p class="ml-2">
+          {% unless job.to_date == 'Present' %}
+            {% assign date = job.to_date | split: ' ' %}
+            <span class="mobile-hide">{{ date[0] }}</span> {{ date[1] }}
+          {% else %}
+            {{ job.to_date }}
+          {% endunless %}
+        </p>
       </div>
     </li>
     {% endfor %}
