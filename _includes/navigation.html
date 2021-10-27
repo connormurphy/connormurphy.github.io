@@ -24,13 +24,14 @@
     </div>
     <ul class="links">
       <li class="link">
-        <a href="/projects/" class="secondary">
+        <a href="/projects/" class="secondary {% if page.url contains '/projects/' %}active{% endif %}">
           Projects <span class="num muted mono">{{ site.projects | size }}</span>
         </a>
       </li>
       {% for item in site.data.content.navigation.menu %}
         <li class="link">
-          <a href="{{ item.link }}" class="secondary{% if page.url == item.link %} active{% endif %}">
+          {% assign item_link = item.link | append: '/' %}
+          <a href="{{ item.link }}" class="secondary{% if page.url == item_link %} active{% endif %}">
             {{ item.name }}
           </a>
         </li>

@@ -52,6 +52,14 @@ ul.links {
     display: inline-block;
     margin-left: 2em;
 
+    a {
+      color: #595959;
+
+      &.active {
+        color: $color-text;
+      }
+    }
+
     &:first-of-type {
       margin-left: 0;
     }

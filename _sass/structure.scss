@@ -158,6 +158,11 @@ li {
   &.no-border {
     border-top: none;
   }
+  &.no-border-mobile {
+    @media only screen and (max-width: $mobile) {
+      border-top: none;
+    }
+  }
   &.slim {
     padding: 6em 0;
 
