@@ -3,10 +3,28 @@
 <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 <script src="/assets/js/locomotive-scroll.min.js"></script>
 <script>
+  document.querySelectorAll('.text-animate').forEach(function(e) {
+    e.innerHTML = e.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  });
   window.addEventListener('load', function() {
     var scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true
+    });
+    scroll.on('call', (obj) => {
+      if (obj.includes('text-animate')) {
+        let ref = obj.split('+');
+        anime.timeline({loop: false}).add({
+            targets: `#${ref[1]} .letter`,
+            translateY: [100,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 30 * i
+        });
+      } else if (obj.includes('animate-in')) {
+        let ref = obj.split('+');
+        document.getElementById(ref[1]).classList.add('animated');
+      }
     });
   });
 </script>

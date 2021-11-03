@@ -3,18 +3,20 @@
     <div class="site-title">
       <a class="secondary" href="/">
         {% if page.url == '/' %}
-          <h1>{{ site.title }}</h1>
+          <h1 class="text-animate" id="nav-h1" data-scroll data-scroll-call="text-animate+nav-h1">{{ site.title }}</h1>
         {% else %}
-          {{ site.title }}
+          <p class="m-0 text-animate" id="nav-h1" data-scroll data-scroll-call="text-animate+nav-h1">{{ site.title }}</p>
         {% endif %}
       </a>
     </div>
     <p class="role mobile-hide">
-      {{ site.data.content.navigation.job_title }}
-      <span class="dash"></span>
+      <span class="text-animate" id="nav-role" data-scroll data-scroll-call="text-animate+nav-role">
+        {{ site.data.content.navigation.job_title }}
+      </span>
+      <span class="dash" id="role-dash" data-scroll data-scroll-call="animate-in+role-dash" data-scroll-delay="1"></span>
     </p>
   </div>
-  <button class="mobile-menu mobile-only">Menu</button>
+  <button class="mobile-menu mobile-only animate__fadeIn" id="mobile-menu-btn" data-scroll data-scroll-call="animate-in+mobile-menu-btn">Menu</button>
   <div class="nav_links">
     <div class="flex between mobile-only">
       <a href="/" class="secondary">
@@ -25,14 +27,14 @@
     <ul class="links">
       <li class="link">
         <a href="/projects/" class="secondary {% if page.url contains '/projects/' %}active{% endif %}">
-          Projects <span class="num muted mono">{{ site.projects | size }}</span>
+          <span class="text-animate" id="link-projects" data-scroll data-scroll-call="text-animate+link-projects">Projects</span> <span class="num muted mono animate__fadeIn" id="project-count" data-scroll data-scroll-call="animate-in+project-count">{{ site.projects | size }}</span></p>
         </a>
       </li>
       {% for item in site.data.content.navigation.menu %}
         <li class="link">
           {% assign item_link = item.link | append: '/' %}
           <a href="{{ item.link }}" class="secondary{% if page.url == item_link %} active{% endif %}">
-            {{ item.name }}
+            <p class="text-animate" id="link-{{ item.name | handleize }}" data-scroll data-scroll-call="text-animate+link-{{ item.name | handleize }}">{{ item.name }}</p>
           </a>
         </li>
       {% endfor %}

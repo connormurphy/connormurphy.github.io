@@ -1,22 +1,22 @@
 ---
-  layout: about
+  layout: default
   title: About
 ---
 
 <h1 class="visually-hidden">{{ site.data.content.about.title }}</h1>
 
-<div class="section slimmer no-border grid column-45 mobile-block" data-scroll-section>
-  <div class="thumbnail pr-6">
+<div class="section slimmer no-border grid column-auto mobile-row" data-scroll-section>
+  <div class="thumbnail pr-6 w-45 mw-540 mobile-row-2">
     <img src="{{ site.data.content.about.image }}">
   </div>
-  <div class="pt-4 border-top flex vertical between">
+  <div class="pt-4 border-top flex vertical between mobile-row-1">
     <div class="content">
       <p class="small muted mono mb-4">/00-1</p>
       <p class="large">
         {{ site.data.content.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
       </p>
     </div>
-    <div class="content bottom">
+    <div class="content bottom mt-8">
       <p class="medium">{{ site.data.content.about.secondary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     </div>
   </div>
@@ -31,7 +31,7 @@
     <li class="pt-6 pb-6 border-bottom flex between center">
       <div class="title">
         <p>{{ job.role }}</p>
-        <p class="muted mt-4">{{ job.company }}</p>
+        <p class="muted mt-2">{{ job.company }}</p>
       </div>
       <div class="time flex center">
         <p class="mr-2">

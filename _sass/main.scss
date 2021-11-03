@@ -410,18 +410,65 @@ button#project-brief-trigger {
 }
 
 .thumbnail {
-  width: 100%;
+  &.w {
+    &-45 {
+      width: 45vw;
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+    &-55 {
+      width: 55vw;
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  &.mw {
+    &-540 {
+      max-width: 540px;
+    }
+    &-756 {
+      max-width: 756px;
+    }
+  }
   img {
     width: 100%;
+  }
+  
+  .image_container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    img {
+      transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
   }
 
   @media only screen and (max-width: $mobile) {
     padding-right: unset !important;
     margin-bottom: 1em !important;
+    width: 100%;
+    max-width: unset;
   }
 }
 .project-info {
   border-top: 1px solid $color-border;
+
+  .project-title {
+    font-size: 2.3em;
+  }
+  .project-description {
+    font-size: 1.2em;
+  }
 
   @media only screen and (max-width: $mobile) {
     margin-top: 3em;
@@ -439,6 +486,7 @@ a.align-right {
 }
 
 .experience {
+  font-size: 1.2em;
   svg.arrow {
     @media only screen and (max-width: $mobile) {
       height: 18px !important;

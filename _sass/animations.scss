@@ -1,0 +1,82 @@
+.image__container {
+  overflow: hidden;
+}
+
+.img-animate {
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+  &__scale {
+    transform: scale(1.5);
+    &.animated {
+      transform: scale(1);
+    }
+  }
+  &__reveal {
+    &_left {
+      clip-path: inset(0 100% 0 0);
+      &.animated {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+    &_right {
+      clip-path: inset(0 0 0 100%);
+      &.animated {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+    &_top {
+      clip-path: inset(0 0 100% 0);
+      &.animated {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+    &_bottom {
+      clip-path: inset(100% 0 0 0);
+      &.animated {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+span.letter {
+  display: inline-block;
+}
+span.text-animate {
+  width: fit-content;
+  display: inline-block;
+}
+.text-animate {
+  overflow: hidden;
+}
+
+.animate {
+  &__fadeIn {
+    opacity: 0;
+    transition: 1s ease-in-out;
+
+    &.animated {
+      opacity: 1;
+    }
+  }
+  &__slide {
+    &_down {
+      transition: 0.8s ease-in-out;
+      position: relative;
+      top: -30px;
+      opacity: 0;
+
+      &.animated {
+        top: 0;
+        opacity: 1;
+      }
+    }
+  }
+}

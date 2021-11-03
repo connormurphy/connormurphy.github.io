@@ -134,6 +134,9 @@ li {
   &.column-70 {
     grid-template-columns: 70vw 1fr;
   }
+  &.column-auto {
+    grid-template-columns: auto 1fr;
+  }
   &.center {
     align-items: center;
   }
@@ -143,11 +146,28 @@ li {
       display: block;
     }
   }
+  &.mobile-row {
+    @media only screen and (max-width: $mobile) {
+      grid-template-rows: auto auto;
+    }
+  }
 
   .align-right {
     align-self: flex-end;
     justify-content: flex-end;
     text-align: right;
+  }
+}
+
+.mobile-row {
+  @media screen and (max-width: $mobile) {
+    &-1 {
+      grid-row: 1;
+    }
+    &-2 {
+      grid-row: 2;
+      margin-top: 4em;
+    }
   }
 }
 

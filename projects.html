@@ -8,9 +8,13 @@
 </div>
 
 {% for project in site.projects %}
-  <div class="section slim no-border grid column-55 mobile-block" data-scroll-section>
-    <div class="thumbnail pr-5">
-      <img src="{{ project.thumbnail }}">
+  <div class="section slim no-border grid column-auto mobile-block" data-scroll-section>
+    <div class="thumbnail project pr-5 w-55 mw-756">
+      <a href="{{ project.url }}">
+        <div class="image_container">
+          <img src="{{ project.thumbnail }}">
+        </div>
+      </a>
     </div>
     <div class="project-info flex vertical between pt-4">
       <div class="top">
@@ -19,7 +23,7 @@
           <p class="muted mono small">/00-{{ site.projects | size }}</p>
         </div>
         <a class="secondary flex between center" href="{{ project.url }}">
-          <p class="large">{{ project.title }}</p>
+          <p class="project-title">{{ project.title }}</p>
           {% capture size %}20{% endcapture %}
           {% include icons/icon-arrow-right.html %}
         </a>
