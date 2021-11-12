@@ -62,6 +62,10 @@ ul.links {
 
       &.active {
         color: $color-text;
+
+        @media screen and (max-width: $mobile) {
+          color: $color-white;
+        }
       }
     }
 
@@ -77,7 +81,7 @@ ul.links {
     height: 100%;
     width: 100%;
     background: $color-text;
-    color: $color-white;
+    color: darken($color-white, 20);
     top: 0;
     right: -100%;
     z-index: 99;
@@ -89,7 +93,7 @@ ul.links {
     }
 
     a.secondary {
-      color: $color-white;
+      color: darken($color-white, 20);
     }
     button {
       color: $color-white;

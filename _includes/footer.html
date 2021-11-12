@@ -1,6 +1,6 @@
 {% if page.title == 'Contact' %}
   <div class="section slimmer contact no-border flex between center" data-scroll-section>
-    <ul class="socials inline">
+    <ul class="socials inline animate__fadeIn" id="footer-socials" data-scroll data-scroll-call="animate-in+footer-socials">
       {% for site in site.data.content.contact.socials %}
         <li>
           <a class="secondary" href="{{ site.url }}" target="_blank" rel="noopener nofollow">
@@ -9,11 +9,11 @@
         </li>
       {% endfor %}
     </ul>
-    <p>{{ site.data.content.contact.phone }}</p>
+    <p class="animate__fadeIn" id="footer-phone" data-scroll data-scroll-call="animate-in+footer-phone">{{ site.data.content.contact.phone }}</p>
   </div>
 {% else %}
   <div class="section slimmer footer flex between center" data-scroll-section>
-    <p>{{ site.title }}. {{ site.data.content.footer.copyright | markdownify | remove: '<p>' | remove: '</p>' }} Built by <a class="dark" href="https://boandco.studio/?ref={{ site.url }}" target="_blank" rel="noopener nofollow">Bo & Co</a></a></p>
-    <p class="mobile-hide">{{ site.url }}</p>
+    <p class="animate__fadeIn" id="footer-copyright" data-scroll data-scroll-call="animate-in+footer-copyright">{{ site.title }}. {{ site.data.content.footer.copyright | markdownify | remove: '<p>' | remove: '</p>' }} Built by <a class="dark" href="https://boandco.studio/?ref={{ site.url }}" target="_blank" rel="noopener nofollow">Bo & Co</a></a></p>
+    <p class="mobile-hide animate__fadeIn" id="footer-url" data-scroll data-scroll-call="animate-in+footer-url">{{ site.url }}</p>
   </div>
 {% endif %}

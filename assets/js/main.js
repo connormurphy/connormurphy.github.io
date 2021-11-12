@@ -1,6 +1,14 @@
 var mouseX = window.innerWidth/2,
     mouseY = window.innerHeight/2;
 
+function is_local(link) {
+  if (link.host == window.location.host) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 document.querySelectorAll('a').forEach(function(x) {
   const cursorEl = document.querySelector('#cursor');
   x.addEventListener('mouseover', function() {
@@ -8,6 +16,16 @@ document.querySelectorAll('a').forEach(function(x) {
   });
   x.addEventListener('mouseleave', function() {
     cursorEl.classList.remove('active');
+  });
+  x.addEventListener('click', function() {
+    console.log(x.host);
+    if (is_local(x)) {
+      event.preventDefault();
+      document.querySelector('.loading-screen').classList.toggle('animated');
+      setTimeout(function() {
+        window.location = x.getAttribute('href');
+      }, 1000);
+    }
   });
 });
 

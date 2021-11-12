@@ -8,9 +8,9 @@
 
       {% include project/count.html %}
       
-      <h1 class="xx-large" data-scroll-section>{{ page.title }}</h1>
+      <h1 class="xx-large text-animate" id="project-title" data-scroll data-scroll-call="text-animate+project-title" data-scroll-section>{{ page.title }}</h1>
       <div class="section slimmer flex between center mt-5" data-scroll-section>
-        <p class="large">{{ current_index | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}</p>
+        <p class="large letter-animate" id="project-count" data-scroll data-scroll-call="text-animate+project-count">{{ current_index | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}</p>
         <button id="project-brief-trigger" class="plain large">Project Brief</button>
       </div>
       

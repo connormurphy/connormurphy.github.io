@@ -49,12 +49,18 @@
 span.letter {
   display: inline-block;
 }
-span.text-animate {
+span.text-animate,
+span.letter-animate {
   width: fit-content;
   display: inline-block;
 }
-.text-animate {
+.text-animate,
+.letter-animate {
   overflow: hidden;
+}
+.text-animate {
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .animate {

@@ -3,24 +3,24 @@ layout: default
 title: 'Home'
 ---
 <div class="section slimmer no-border" data-scroll-section>
-  <h2 class="xx-large mb-1">{{ site.data.content.homepage.headline | replace: '$br', '<br/>' }}</h2>
+  <h2 class="xx-large mb-1 text-animate" id="index-h1" data-scroll data-scroll-call="text-animate+index-h1">{{ site.data.content.homepage.headline | replace: '$br', '<br/>' }}</h2>
 </div>
 
 <div class="section slim" data-scroll-section>
-  <p class="large">
-    <span class="heading_small">{{ site.data.content.about.title }}</span>
+  <p class="large animate__fadeIn" id="about-content" data-scroll data-scroll-call="animate-in+about-content">
+    <span class="heading_small letter-animate" id="about-title" data-scroll data-scroll-call="text-animate+about-title">{{ site.data.content.about.title }}</span>
     {{ site.data.content.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
   {% if site.data.content.about.cta %}
     <div class="flex full end mt-5">
-      <a href="/about/" class="primary">{{ site.data.content.about.cta }}</a>
+      <a href="/about/" class="primary letter-animate" id="about-cta" data-scroll data-scroll-call="text-animate+about-cta">{{ site.data.content.about.cta }}</a>
     </div>
   {% endif %}
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large">{{ site.data.content.homepage.projects.title }}</h2>
-  <p class="mt-4 max-40 medium">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  <h2 class="x-large letter-animate" id="projects-h2" data-scroll data-scroll-call="text-animate+projects-h2">{{ site.data.content.homepage.projects.title }}</h2>
+  <p class="mt-4 max-40 medium animate__fadeIn" id="projects-desc" data-scroll data-scroll-call="animate-in+projects-desc">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
   <div class="grid column-50 mobile-100 mt-10">
     <div class="project-thumbnail direction_right mt-8">
@@ -32,11 +32,12 @@ title: 'Home'
     </div>
     <div class="projects">
       {% for project in site.projects %}
+        {% assign project_id = forloop.index | prepend: '00' | slice: -2, 2 %}
         <a href="{{ project.url }}" class="secondary">
           <li class="project" data-ref="{{ forloop.index }}" data-thumbnail="{{ project.thumbnail }}">
-            <p class="num muted mono ml-1 mt-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</p>
-            <p>{{ project.title }}</p>
-            <p class="mobile-hide">{{ project.listing_type }}</p>
+            <p class="num muted mono ml-1 mt-1 letter-animate" id="project-{{ project_id }}-num" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-num">{{ project_id }}</p>
+            <p class="text-animate" id="project-{{ project_id }}-title" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-title">{{ project.title }}</p>
+            <p class="mobile-hide text-animate" id="project-{{ project_id }}-type" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-type">{{ project.listing_type }}</p>
             {% include icons/icon-arrow.html %}
           </li>
         </a>
@@ -46,12 +47,13 @@ title: 'Home'
 </div>
 
 <div class="section grid no-border-mobile" data-scroll-section>
-  <h2 class="x-large">{{ site.data.content.homepage.process.title }}</h2>
+  <h2 class="x-large letter-animate" id="process-h2" data-scroll data-scroll-call="text-animate+process-h2">{{ site.data.content.homepage.process.title }}</h2>
   <div class="process mt-5">
     {% for item in site.data.content.homepage.process.items %}
+      {% assign process_id = forloop.index %}
       <div class="item" data-scroll data-scroll-speed="{{ forloop.index }}" data-scroll-delay="{{ forloop.index | divided_by: 10.0 }}">
-        <p class="mt-2 mb-6">{{ item.title }}</p>
-        <p class="muted body">{{ item.body }}</p>
+        <p class="mt-2 mb-6 text-animate" id="process-{{ process_id }}-title" data-scroll data-scroll-call="text-animate+process-{{ process_id }}-title">{{ item.title }}</p>
+        <p class="muted body animate__fadeIn" id="process-{{ process_id }}-body" data-scroll data-scroll-call="animate-in+process-{{ process_id }}-body">{{ item.body }}</p>
       </div>
     {% endfor %}
   </div>

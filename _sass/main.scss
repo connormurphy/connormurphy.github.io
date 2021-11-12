@@ -522,3 +522,45 @@ a.align-right {
     }
   }
 }
+
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: $color-text;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+  .loader {
+    height: 25px;
+    width: 25px;
+    background: $color-white;
+    position: relative;
+    animation: blink 2s linear infinite;
+    transition: transform 1s ease;
+    
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  &.animated {
+    width: 0vw;
+
+    .loader {
+      transform: rotate(180deg);
+    }
+  }
+}

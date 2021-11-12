@@ -1,15 +1,15 @@
 <div id="project-brief" class="section slimmer flex between mobile-block mobile-collapse" data-scroll-section>
   <div class="column">
-    <h3 class="mb-3">Project Timeline</h3>
-    <p class="muted">{{ page.timeline }}</p>
+    <h3 class="mb-3 letter-animate" id="brief-timeline-h3" data-scroll data-scroll-call="text-animate+brief-timeline-h3">Project Timeline</h3>
+    <p class="muted animate__fadeIn" id="brief-timeline-body" data-scroll data-scroll-call="animate-in+brief-timeline-body">{{ page.timeline }}</p>
   </div>
   <div class="column">
-    <h3 class="mb-3">Project Type</h3>
-    <p class="muted">{{ page.type }}</p>
+    <h3 class="mb-3 letter-animate" id="brief-type-h3" data-scroll data-scroll-call="text-animate+brief-type-h3">Project Type</h3>
+    <p class="muted animate__fadeIn" id="brief-type-body" data-scroll data-scroll-call="animate-in+brief-type-body">{{ page.type }}</p>
   </div>
   <div class="column">
-    <h3 class="mb-3">Contributers</h3>
-    <ul class="contributers">
+    <h3 class="mb-3 letter-animate" id="brief-contrib-h3" data-scroll data-scroll-call="text-animate+brief-contrib-h3">Contributers</h3>
+    <ul class="contributers animate__fadeIn" id="brief-contrib-body" data-scroll data-scroll-call="animate-in+brief-contrib-body">
       {% for contributer in page.contributers %}
       <li class="contributer">
         <p class="mb-1 muted">{{ contributer.role }}</p>
@@ -25,8 +25,8 @@
     </ul>
   </div>
   <div class="column">
-    <h3 class="mb-3">My Contribution</h3>
-    <ul>
+    <h3 class="mb-3 letter-animate" id="brief-mycontrib-h3" data-scroll data-scroll-call="text-animate+brief-mycontrib-h3">My Contribution</h3>
+    <ul class="animate__fadeIn" id="brief-mycontrib-body" data-scroll data-scroll-call="animate-in+brief-mycontrib-body">
       {% for contribution in page.contributions %}
         <li class="mb-2">
           <p class="muted">{{ contribution.label }}</p>
