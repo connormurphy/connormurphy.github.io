@@ -3,10 +3,9 @@
   <a href="{{ page.previous.url }}" class="secondary grid">
     <div class="flex center">
       {% include icons/icon-arrow-left.html %}
-      <p class="x-large project-pagination-title ml-1">Previous</p>
+      <p class="x-large project-pagination-title ml-1 letter-animate" id="previous" data-scroll data-scroll-call="text-animate+previous">Previous</p>
     </div>
-    <p class="mt-2">{{ page.previous.title }}
-      {{ current_index | minus: 1 | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}
+    <p class="mt-2 text-animate" id="previous-title" data-scroll data-scroll-call="text-animate+previous-title">{{ page.previous.title }} &#8212; {{ current_index | minus: 1 | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}
     </p>
   </a>
   {% else %}
@@ -16,11 +15,10 @@
   {% if page.next %}
     <a href="{{ page.next.url }}" class="secondary grid">
       <div class="flex center end">
-        <p class="x-large project-pagination-title mr-1">Next</p>
+        <p class="x-large project-pagination-title mr-1 letter-animate" id="next" data-scroll data-scroll-call="text-animate+next">Next</p>
         {% include icons/icon-arrow-right.html %}
       </div>
-      <p class="align-right mt-2">{{ page.next.title }}
-        {{ current_index | plus: 1 | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}
+      <p class="align-right mt-2 text-animate" id="next-title" data-scroll data-scroll-call="text-animate+next-title">{{ page.next.title }} &#8212; {{ current_index | plus: 1 | prepend: '00' | slice: -2, 2 }} / {{ site.projects | size | prepend: '00' | slice: -2, 2 }}
       </p>
     </a>
   {% else %}

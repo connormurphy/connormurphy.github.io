@@ -25,5 +25,13 @@
       {% include footer.html %}
     </div>
     {% include scripts.html %}
+    <script>
+      document.querySelectorAll('img').forEach(function(x, i) {
+        x.classList.add('img-animate', 'img-animate__reveal_bottom');
+        x.id = `img-${i}`;
+        x.setAttribute('data-scroll', '');
+        x.setAttribute('data-scroll-call', `animate-in+img-${i}`);
+      });
+    </script>
   </body>
 </html>

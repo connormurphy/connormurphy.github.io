@@ -8,10 +8,11 @@
 </div>
 
 {% for project in site.projects %}
+  {% assign project_id = forloop.index %}
   <div class="section slim no-border grid column-auto mobile-block" data-scroll-section>
     <div class="thumbnail project pr-5 w-55 mw-756">
       <a href="{{ project.url }}">
-        <div class="image_container">
+        <div class="image_container img-animate img-animate__reveal_left" id="project-{{ project_id }}-img" data-scroll data-scroll-call="animate-in+project-{{ project_id }}-img">
           <img src="{{ project.thumbnail }}">
         </div>
       </a>
@@ -19,23 +20,24 @@
     <div class="project-info flex vertical between pt-4">
       <div class="top">
         <div class="count flex between mb-4">
-          <p class="muted mono small">/00-{{ forloop.index }}</p>
-          <p class="muted mono small">/00-{{ site.projects | size }}</p>
+          <p class="muted mono small letter-animate" id="project-{{ project_id }}-index" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-index">/00-{{ forloop.index }}</p>
+          <p class="muted mono small letter-animate" id="project-{{ project_id }}-size" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-size">/00-{{ site.projects | size }}</p>
         </div>
         <a class="secondary flex between center" href="{{ project.url }}">
-          <p class="project-title">{{ project.title }}</p>
+          <p class="project-title letter-animate" id="project-{{ project_id }}-title" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-title">{{ project.title }}</p>
           {% capture size %}20{% endcapture %}
           {% include icons/icon-arrow-right.html %}
         </a>
         <div class="project-description">
-          <p class="mt-4">{{ project.description }}</p>
+          <p class="mt-4 animate__fadeIn" id="project-{{ project_id }}-desc" data-scroll data-scroll-call="animate-in+project-{{ project_id }}-desc">{{ project.description }}</p>
         </div>
       </div>
       <div class="bottom">
-        <p class="muted">{{ project.listing_type }}</p>
+        <p class="muted text-animate" id="project-{{ project_id }}-type" data-scroll data-scroll-call="text-animate+project-{{ project_id }}-type">{{ project.listing_type }}</p>
       </div>
     </div>
   </div>
 {% endfor %}
 
+{% assign classes = 'mobile-no-border-top' %}
 {% include contact.html %}

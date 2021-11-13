@@ -7,33 +7,36 @@
 
 <div class="section slimmer no-border grid column-auto mobile-row" data-scroll-section>
   <div class="thumbnail pr-6 w-45 mw-540 mobile-row-2">
-    <img src="{{ site.data.content.about.image }}">
+    <div class="image__container img-animate img-animate__reveal_bottom" id="about-img" data-scroll data-scroll-call="animate-in+about-img">
+      <img src="{{ site.data.content.about.image }}">
+    </div>
   </div>
   <div class="pt-4 border-top flex vertical between mobile-row-1">
     <div class="content">
-      <p class="small muted mono mb-4">/00-1</p>
-      <p class="large">
+      <p class="small muted mono mb-4 letter-animate" id="about-001" data-scroll data-scroll-call="text-animate+about-001">/00-1</p>
+      <p class="large animate__fadeIn" id="about-body" data-scroll data-scroll-call="animate-in+about-body">
         {{ site.data.content.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
       </p>
     </div>
-    <div class="content bottom mt-8">
+    <div class="content bottom mt-8 animate__fadeIn" id="about-secondary" data-scroll data-scroll-call="animate-in+about-secondary">
       <p class="medium">{{ site.data.content.about.secondary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     </div>
   </div>
 </div>
 
 <div class="section slim grid mobile-block no-margin" data-scroll-section>
-  <p class="small muted mono mb-4">/00-2</p>
-  <h2 class="x-large">{{ site.data.content.about.experience.title }}</h2>
+  <p class="small muted mono mb-4 letter-animate" id="about-002" data-scroll data-scroll-call="text-animate+about-002">/00-2</p>
+  <h2 class="x-large letter-animate" id="about-experience-title" data-scroll data-scroll-call="text-animate+about-experience-title">{{ site.data.content.about.experience.title }}</h2>
 
   <ul class="experience">
     {% for job in site.data.content.about.experience.jobs %}
+    {% assign job_id = forloop.index %}
     <li class="pt-6 pb-6 border-bottom flex between center">
       <div class="title">
-        <p>{{ job.role }}</p>
-        <p class="muted mt-2">{{ job.company }}</p>
+        <p class="letter-animate" id="job-{{ job_id }}-role" data-scroll data-scroll-call="text-animate+job-{{ job_id }}-role">{{ job.role }}</p>
+        <p class="muted mt-2 letter-animate" id="job-{{ job_id }}-company" data-scroll data-scroll-call="text-animate+job-{{ job_id }}-company">{{ job.company }}</p>
       </div>
-      <div class="time flex center">
+      <div class="time flex center animate__fadeIn" id="job-{{ job_id }}-time" data-scroll data-scroll-call="animate-in+job-{{ job_id }}-time">
         <p class="mr-2">
           {% assign date = job.from_date | split: ' ' %}
           <span class="mobile-hide">{{ date[0] }}</span> {{ date[1] }}
@@ -53,7 +56,7 @@
     {% endfor %}
   </ul>
   <a class="align-right" href="/assets/resume.pdf">
-    <p class="large fit-content right">Download Resume</p>
+    <p class="large fit-content right animate__fadeIn" id="about-resume" data-scroll data-scroll-call="animate-in+about-resume">Download Resume</p>
   </a>
 </div>
 

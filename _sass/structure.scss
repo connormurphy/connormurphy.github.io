@@ -171,6 +171,19 @@ li {
   }
 }
 
+.mobile-no-border {
+  @media only screen and (max-width: $mobile) {
+    &-top {
+      border-top: none !important;
+      border-top: 0 !important;
+    }
+    &-bottom {
+      border-bottom: none !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
 .section {
   padding: 8em 0;
   border-top: 1px solid $color-border;

@@ -1,3 +1,9 @@
+window.onpageshow = () => {
+  if (event.persisted) {
+      window.location.reload() 
+  }
+}
+
 var mouseX = window.innerWidth/2,
     mouseY = window.innerHeight/2;
 
