@@ -20,6 +20,7 @@
         anime.timeline({loop: false}).add({
             targets: `#${ref[1]} .letter`,
             translateY: [100,0],
+            opacity: [0, 1],
             easing: "easeOutExpo",
             duration: 1400,
             delay: (el, i) => 30 * i
