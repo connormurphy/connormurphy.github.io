@@ -50,6 +50,7 @@ p.role {
   font-size: 1em;
   font-family: $font-main;
   cursor: pointer;
+  color: $color-text;
 }
 
 ul.links {
@@ -83,13 +84,14 @@ ul.links {
     background: $color-text;
     color: darken($color-white, 20);
     top: 0;
-    right: -100%;
+    right: 0;
     z-index: 99;
     padding: 1.6em;
-    transition: right 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+    transform: translateX(100%);
 
     &.active {
-      right: 0;
+      transform: translateX(0);
     }
 
     a.secondary {

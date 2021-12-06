@@ -7,7 +7,7 @@
     e.innerHTML = e.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   });
   document.querySelectorAll('.text-animate').forEach(function(e) {
-    e.innerHTML = e.textContent.replace(/\S*/g, "<span class='letter'>$&</span>");
+    e.innerHTML = e.innerHTML.replace(/(?!<*b*r*>)\S*[^\s]/g, "<span class='letter'>$&</span>");
   });
   window.addEventListener('load', function() {
     var scroll = new LocomotiveScroll({

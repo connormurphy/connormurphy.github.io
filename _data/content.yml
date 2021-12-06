@@ -7,7 +7,7 @@ navigation:
       link: /contact
 
 homepage:
-  headline: "I’m Connor, a$br digital designer based in Denver &#9968;"
+  headline: "I’m Connor, $br a digital designer based in Denver &#9968;"
   projects:
     title: "Projects"
     body: "Due to the nature of where I work, I’m not able to show everything here in my portfolio. If you’d like to see more feel free to [email me](mailto:connormurphydesign@gmail.com)."
@@ -29,11 +29,11 @@ contact:
     email: "connormurphydesign@gmail.com"
     socials:
         - label: 'Twitter'
-          url: 'https://twitter.com'
+          url: 'https://twitter.com/atconnormurphy'
         - label: 'Instagram'
-          url: 'https://instagram.com'
-        - label: 'Linkedin'
-          url: 'https://linkedin.com'
+          url: 'https://instagram.com/connormurphyy'
+        - label: 'Dribbble'
+          url: 'https://dribbble.com/connormurphy'
     phone: '+15857397475'
 
 about:
