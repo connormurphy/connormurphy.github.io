@@ -55,4 +55,6 @@ I worked with Jared Granger to bring the vision of the website to life. We wante
 
 ![](/assets/img/2021/7-www-full-min.png)
 
+d
+
 ![](/assets/img/2021/8-responsive-min.png)
