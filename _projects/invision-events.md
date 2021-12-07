@@ -1,9 +1,10 @@
 ---
 layout: project
-title: Invision Events
+title: InVision Events
 listing_type: Website, Email, Art Direction
 type: Landing page
-description: I created a platform for InVision’s events to held. This included both in-person and virtual events.
+description: I created a platform for InVision’s events to held. This included both
+  in-person and virtual events.
 timeline: October 2019-November 2019
 contributers:
 - role: Lead Designer
@@ -28,7 +29,7 @@ contributions:
 - label: Art direction
 - label: Landing page design
 - label: Social
-date: 2021-06-13 04:00:00 +0000
+date: 2021-06-13T04:00:00.000+00:00
 thumbnail: "/assets/img/thumbnail.jpg"
 
 ---
