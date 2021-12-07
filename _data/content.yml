@@ -1,66 +1,75 @@
+---
 navigation:
-  job_title: "Designer"
+  job_title: Designer
   menu:
-    - name: About
-      link: /about
-    - name: Contact
-      link: /contact
-
+  - name: About
+    link: "/about"
+  - name: Contact
+    link: "/contact"
 homepage:
-  headline: "I’m Connor, $br a digital designer based in Denver &#9968;"
+  headline: I’m Connor, $br a digital designer based in Denver &#9968;
   projects:
-    title: "Projects"
-    body: "Due to the nature of where I work, I’m not able to show everything here in my portfolio. If you’d like to see more feel free to [email me](mailto:connormurphydesign@gmail.com)."
+    title: Projects
+    body: Due to the nature of where I work, I’m not able to show everything here
+      in my portfolio. If you’d like to see more feel free to [email me](mailto:connormurphydesign@gmail.com).
   process:
-    title: "Process"
+    title: Process
     items:
-      - title: "Creative Approach"
-        body: "I try to learn as much as I can before designing. This means really understanding the problem at hand through research and anything else I can do to connect to the project or client."
-      - title: "Design Strategy"
-        body: "I pull together a few design directions, create prototypes, and really get a feel for the product before going into development."
-      - title: "Production & Implementation"
-        body: "I collaborate with developers to implement the final project. This means running through quality assurance and testing to make sure we have the best possible solution."
+    - title: Creative Approach
+      body: I try to learn as much as I can before designing. This means really understanding
+        the problem at hand through research and anything else I can do to connect
+        to the project or client.
+    - title: Design Strategy
+      body: I pull together a few design directions, create prototypes, and really
+        get a feel for the product before going into development.
+    - title: Production & Implementation
+      body: I collaborate with developers to implement the final project. This means
+        running through quality assurance and testing to make sure we have the best
+        possible solution.
   contact:
-    title: "Let's chat"
-    body: "Contact me"
+    title: Let's chat
+    body: Contact me
     spacer: "•"
-
 contact:
-    email: "connormurphydesign@gmail.com"
-    socials:
-        - label: 'Twitter'
-          url: 'https://twitter.com/atconnormurphy'
-        - label: 'Instagram'
-          url: 'https://instagram.com/connormurphyy'
-        - label: 'Dribbble'
-          url: 'https://dribbble.com/connormurphy'
-    phone: '+15857397475'
-
+  email: me@connormurphy.design
+  socials:
+  - label: Twitter
+    url: https://twitter.com/atconnormurphy
+  - label: Instagram
+    url: https://instagram.com/connormurphyy
+  - label: Dribbble
+    url: https://dribbble.com/connormurphy
+  phone: "+15857397475"
 about:
-  image: /assets/img/connor-murphy.jpg
-  title: "About"
-  body: "I’m currently working with the fine folks @ [Shopify](https://shopify.com){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}, but have limited availibility for freelance. When I’m not designing, you can catch me outside exploring, hiking Colorado’s famous peaks, searching for the best Hefeweizens, or complaining about Denver's pizza. That’s what being born and raised in New York will do to you."
-  secondary: "Didn’t expect Myspace to be a career-launcher, but that’s how I got my start in design. As a mostly self-taught designer, I’ve worked for startups, agencies, and even solo. These days I’m based in Denver—but I'm a big remote work advocate."
-  cta: "More"
+  image: "/assets/img/connor-murphy.jpg"
+  title: About
+  body: I’m currently working with the fine folks @ [Shopify](https://shopify.com){:target="_blank"}{:rel="noopener
+    noreferrer"}, but have limited availibility for freelance. When I’m not designing,
+    you can catch me outside exploring, hiking Colorado’s famous peaks, searching
+    for the best Hefeweizens, or complaining about Denver's pizza. That’s what being
+    born and raised in New York will do to you.
+  secondary: Didn’t expect Myspace to be a career-launcher, but that’s how I got my
+    start in design. As a mostly self-taught designer, I’ve worked for startups, agencies,
+    and even solo. These days I’m based in Denver—but I'm a big remote work advocate.
+  cta: More
   experience:
-    title: "Experience"
+    title: Experience
     jobs:
-      - company: Shopify
-        role: Senior Designer
-        from_date: December 2020
-        to_date:  Present
-      - company: InVision
-        role: Designer
-        from_date: May 2015
-        to_date: March 2020
-      - company: Hungry
-        role: Designer
-        from_date: October 2014
-        to_date: May 2015
-      - company: Maker's Row
-        role: Designer
-        from_date: March 2014
-        to_date: August 2014
-
+    - company: Shopify
+      role: Senior Designer
+      from_date: December 2020
+      to_date: Present
+    - company: InVision
+      role: Designer
+      from_date: May 2015
+      to_date: March 2020
+    - company: Hungry
+      role: Designer
+      from_date: October 2014
+      to_date: May 2015
+    - company: Maker's Row
+      role: Designer
+      from_date: March 2014
+      to_date: August 2014
 footer:
-  copyright: "Copyright and all that."
+  copyright: Copyright and all that.
