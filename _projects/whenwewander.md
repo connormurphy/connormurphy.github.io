@@ -32,3 +32,5 @@ I worked with Jared Granger to bring the vision of the website to life. We wante
 ![](/assets/img/2021/1-www-full-min.png)
 
 ## Exploration
+
+![](/assets/img/2021/2-www-process-min.png)
