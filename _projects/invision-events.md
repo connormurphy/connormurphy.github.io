@@ -59,7 +59,7 @@ To reflect InVision’s updated programming and demand generation strategy, I cr
 
 ![](/assets/img/2021/event-page.png)
 
-![](/assets/img/2021/event-signup.png)
+![](/assets/img/2021/event-signup-2x.png)
 
 ## Results
 
