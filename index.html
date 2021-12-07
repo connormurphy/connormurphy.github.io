@@ -9,17 +9,17 @@ title: 'Home'
 <div class="section slim" data-scroll-section>
   <p class="large animate__fadeIn" id="about-content" data-scroll data-scroll-call="animate-in+about-content">
     <span class="heading_small letter-animate" id="about-title" data-scroll data-scroll-call="text-animate+about-title">{{ site.data.content.about.title }}</span>
-    {{ site.data.content.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
+    {{ site.data.content.homepage.about.body | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
-  {% if site.data.content.about.cta %}
+  {% if site.data.content.homepage.about.cta %}
     <div class="flex full end mt-5">
-      <a href="/about/" class="primary letter-animate" id="about-cta" data-scroll data-scroll-call="text-animate+about-cta">{{ site.data.content.about.cta }}</a>
+      <a href="/about/" class="primary letter-animate" id="about-cta" data-scroll data-scroll-call="text-animate+about-cta">{{ site.data.content.homepage.about.cta }}</a>
     </div>
   {% endif %}
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large letter-animate" id="projects-h2" data-scroll data-scroll-call="text-animate+projects-h2">{{ site.data.content.homepage.projects.title }}</h2>
+  <h2 class="x-large letter-animate" id="projects-h2" data-scroll data-scroll-call="text-animate+projects-h2">{{ site.data.content.projects.title }}</h2>
   <p class="mt-4 max-40 medium animate__fadeIn" id="projects-desc" data-scroll data-scroll-call="animate-in+projects-desc">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 
   <div class="grid column-50 mobile-100 mt-10">

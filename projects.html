@@ -3,8 +3,8 @@
   title: Projects
 ---
 <div class="section no-border grid column-55 mobile-block center between" data-scroll-section>
-  <h1 class="xx-large letter-animate" id="projects-h1" data-scroll data-scroll-call="text-animate+projects-h1">{{ site.data.content.homepage.projects.title }}</h1>
-  <p class="medium mt-4 animate__fadeIn" id="projects-desc" data-scroll data-scroll-call="animate-in+projects-desc">{{ site.data.content.homepage.projects.body | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  <h1 class="xx-large letter-animate" id="projects-h1" data-scroll data-scroll-call="text-animate+projects-h1">{{ site.data.content.projects.title }}</h1>
+  <p class="medium mt-4 animate__fadeIn" id="projects-desc" data-scroll data-scroll-call="animate-in+projects-desc">{{ site.data.content.projects.body | markdownify | remove: "<p>" | remove: "</p>" }}</p>
 </div>
 
 {% for project in site.projects %}
