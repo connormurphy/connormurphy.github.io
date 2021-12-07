@@ -17,7 +17,6 @@ contributions:
 - label: Page Layout & Design
 - label: Brand Direction
 date: 2020-06-09 06:00:00 +0000
-thumbnail: ''
-published: false
+thumbnail: "/assets/img/2021/rc-thumbnail.png"
 
 ---
