@@ -47,6 +47,8 @@ I worked with Jared Granger to bring the vision of the website to life. We wante
 
 ![](/assets/img/2021/6-www-profile-min.png)
 
+![](/assets/img/2021/8-responsive-min5.png)
+
 ## Case Study
 
 ![](/assets/img/2021/10-case-study-min.png)
