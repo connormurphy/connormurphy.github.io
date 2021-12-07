@@ -49,7 +49,7 @@ I worked with Jared Granger to bring the vision of the website to life. We wante
 
 ## Case Study
 
-![](/assets/img/2021/10-case-study.png)
+![](/assets/img/2021/10-case-study-min.png)
 
 ## Final Direction
 
