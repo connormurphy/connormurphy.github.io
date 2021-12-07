@@ -30,3 +30,5 @@ In 2020, I partnered with the WhenWeWonder agency on a number of projects. With 
 I worked with Jared Granger to bring the vision of the website to life. We wanted something clean, something modern, and something that was scalable to display more work as time went on. We decided on more of an editorial vibe as that was similar to a lot of the work the agency was taking on at the time. With this design direction, we were able to display a lot of information while keeping the page clean, with a big focus on typography
 
 ![](/assets/img/2021/1-www-full.png)
+
+## Exploration
