@@ -1,7 +1,7 @@
 ---
 layout: project
 title: RingCentral Blog
-listing_type: ''
+listing_type: Website Design, Art Direction
 type: Blog Overhaul
 description: Redesign of the RingCentral blog property.
 timeline: June 2020–August 2020
