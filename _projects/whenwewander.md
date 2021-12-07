@@ -1,6 +1,6 @@
 ---
 layout: project
-title: WhenWeWander
+title: WhenWeWonder
 listing_type: Website Design, Art Direction
 type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
