@@ -25,6 +25,8 @@ date: 2021-06-13T08:00:00.000+00:00
 thumbnail: "/assets/img/frame-7.jpg"
 
 ---
-Agency website design for the folks over at WhenWeWonder.
+In 2020, I partnered with the WhenWeWonder agency on a number of projects. With work inquiries growing, it was clear they needed a website to display their services, showcase their work, and to have a place on the web where folks could reach out to them.
 
-![](/assets/img/2021/screen-shot-2021-03-22-at-8-20-24-pm.png)
+I worked with Jared Granger to bring the vision of the website to life. We wanted something clean, something modern, and something that was scalable to display more work as time went on. We decided on more of an editorial vibe as that was similar to a lot of the work the agency was taking on at the time. With this design direction, we were able to display a lot of information while keeping the page clean, with a big focus on typography
+
+![](/assets/img/2021/1-www-full.png)
