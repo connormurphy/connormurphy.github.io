@@ -9,9 +9,9 @@ navigation:
 homepage:
   headline: I’m Connor, $br a digital designer based in Denver &#9968;
   projects:
-    title: Projects
-    body: Due to the nature of where I work, I’m not able to show everything here
-      in my portfolio. If you’d like to see more feel free to [email me](mailto:connormurphydesign@gmail.com).
+    title: Featured Projects
+    body: These are a few of my more recent projects that I've worked on. To see all
+      work, head over to the [projects page](/projects)
   process:
     title: Process
     items:
