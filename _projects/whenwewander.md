@@ -6,18 +6,18 @@ type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
 timeline: Soemthing 2019-Something 2020
 contributers:
+- role: Lead Designer
+  name: Connor Murphy
+  url: ''
+- role: Brand Lead
+  name: Jared Granger
+  url: https://jaredgranger.com/
 - role: Strategy
   name: Stephen Rainey
   url: https://twitter.com/swzrainey
 - role: Strategy
   name: Brad Weaver
   url: https://twitter.com/sbradweaver
-- role: Brand Lead
-  name: Jared Granger
-  url: https://jaredgranger.com/
-- role: Lead Designer
-  name: Connor Murphy
-  url: ''
 contributions:
 - label: Website Design
 - label: Art Direction
