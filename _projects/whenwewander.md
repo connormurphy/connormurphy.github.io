@@ -37,4 +37,4 @@ I worked with Jared Granger to bring the vision of the website to life. We wante
 
 ![](/assets/img/2021/3-www-process-min.png){: .half}
 
-![](/assets/img/2021/4-www-process-min.png){: .half}
+![](/assets/img/2021/4-www-process-min.png)
