@@ -58,5 +58,6 @@ fields:
   label: Thumbnail Image
 pages:
 - _projects/invision-events.md
+- _projects/ringcentral-blog.md
 - _projects/shopify.md
 - _projects/whenwewander.md
