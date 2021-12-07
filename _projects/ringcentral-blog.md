@@ -16,7 +16,7 @@ contributions:
 - label: System Design
 - label: Page Layout & Design
 - label: Brand Direction
-date: 
+date: 2020-06-09 06:00:00 +0000
 thumbnail: ''
 published: false
 
