@@ -31,3 +31,5 @@ We decided to break the grid a bit, and design something that was visually flexi
 ![](/assets/img/2021/1-rc-components.png)
 
 Components that I designed to be used across a number of different pages.
+
+![](/assets/img/2021/3-rc-full.png)
