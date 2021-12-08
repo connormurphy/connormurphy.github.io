@@ -32,4 +32,4 @@ We decided to break the grid a bit, and design something that was visually flexi
 
 Components that I designed to be used across a number of different pages.
 
-![](/assets/img/2021/3-rc-full-min.jpg)
+![Full blog homepage for RingCentral](/assets/img/2021/3-rc-full-min.jpg "full")
