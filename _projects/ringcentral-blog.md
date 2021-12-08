@@ -46,4 +46,4 @@ Everything we designed, we designed with tablet & mobile versions in mind. RingC
 
 ![](/assets/img/2021/7-rc-phones.png)
 
-![](/assets/img/2021/8-rc-tablet.png){: .half}{: .right}
+![](/assets/img/2021/8-rc-tablet.png)
