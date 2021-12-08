@@ -33,3 +33,17 @@ We decided to break the grid a bit, and design something that was visually flexi
 Components that I designed to be used across a number of different pages.
 
 ![](/assets/img/2021/3-rc-full.png)
+
+![](/assets/img/2021/4-rc-article.png)
+
+## Responsive
+
+Everything we designed, we designed with tablet & mobile versions in mind. RingCentral noted that 71% of their blog readers are on a mobile or tablet device, so we knew we had to put a lot of work into our responsive versions.
+
+![](/assets/img/2021/5-rc-tablet.png){: .half}
+
+![](/assets/img/2021/6-rc-responsive.png)
+
+![](/assets/img/2021/7-rc-phones.png)
+
+![](/assets/img/2021/8-rc-tablet.png){: .half}{: .right}
