@@ -38,9 +38,9 @@ Components that I designed to be used across a number of different pages.
 
 ## Responsive
 
-![](/assets/img/2021/5-rc-tablet.png){: .half}
-
 Everything we designed, we designed with tablet & mobile versions in mind. RingCentral noted that 71% of their blog readers are on a mobile or tablet device, so we knew we had to put a lot of work into our responsive versions.
+
+![](/assets/img/2021/5-rc-tablet.png){: .half}
 
 ![](/assets/img/2021/6-rc-responsive.png)
 
