@@ -59,7 +59,7 @@ We explored a bunch of different hero options, but one thing was clear: we work 
 
 ![](/assets/img/2021/hero-exp3.jpg)
 
-## Components 
+## Components
 
 <br>
 
