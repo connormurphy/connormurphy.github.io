@@ -85,12 +85,12 @@ One problem we heard from the blog team was that they didn’t have a lot of fre
 
 We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.
 
-We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.
-
 ![](/assets/img/2021/emails.jpg)
+
+We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.
 
 ## Responsive
 
 ![](/assets/img/2021/emails-1.jpg)
 
-Results
+## Results
