@@ -41,7 +41,7 @@ date: 2002-08-30 06:00:00 +0000
 thumbnail: "/assets/img/2021/shopify-blog-thumb.png"
 
 ---
-In September of 2021, the growth UX team at Shopify set out to redesign our blog property. This is a property that hasn’t been reimagined in 8 years, and there were a handful of opportunities and improvements to make. 
+In September of 2021, the growth UX team at Shopify set out to redesign our blog property. This is a property that hasn’t been reimagined in 8 years, and there were a handful of opportunities and improvements to make.
 
 The biggest problem, from a consumer perspective, was that the article page was very cluttered and there was no real sense of hierarchy. It was really busy, and difficult for folks to find things they were looking for. We had a hypothesis that by removing sidebar links, putting more emphasis on the actual content, improving the navigation, and giving a branding facelift we would see higher engagement with content, more time spent on page, and increase our S2L.
 
@@ -58,3 +58,13 @@ We designed this as a v1 and an experiement to test against what we currently ha
 We explored a bunch of different hero options, but one thing was clear: we work with a lot of great artists for these images, so we wanted to put a big emphasis on the artwork. We landed on an option that did just that and put the artwork front and center.
 
 ![](/assets/img/2021/hero-exp3.jpg)
+
+## Components
+
+One problem we heard from the blog team was that they didn’t have a lot of freedom when it came to things like images, videos, sound clips, tables, lists, and more. With scalability in mind, we designed a bunch of components that could be reused across the whole system.
+
+![](/assets/img/2021/image-comp.jpg)
+
+![](/assets/img/2021/quote-comp.jpg)
+
+![](/assets/img/2021/relatedcontent-comp.jpg)
