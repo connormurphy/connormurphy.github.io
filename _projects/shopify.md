@@ -17,7 +17,7 @@ contributers:
   url: https://twitter.com/TyNoseworth
 - role: Development Manager
   name: Steve Shaddick
-  url: https://www.labatt.com/
+  url: ''
 - role: Visuals Editor
   name: Leila Courey
   url: https://twitter.com/leilacourey
