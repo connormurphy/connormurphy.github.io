@@ -68,3 +68,27 @@ One problem we heard from the blog team was that they didn’t have a lot of fre
 ![](/assets/img/2021/quote-comp.jpg)
 
 ![](/assets/img/2021/relatedcontent-comp.jpg)
+
+![](/assets/img/2021/subscribe-comp.jpg){: .half}{: .right}
+
+![](/assets/img/2021/type-comp.jpg)
+
+## Page Layout
+
+![](/assets/img/2021/full-page.jpg)
+
+![](/assets/img/2021/search.jpg)
+
+![](/assets/img/2021/search-results.jpg)
+
+## Email Design
+
+We redesigned our weekly newsletter as well to match the new clean aesthetic of the blog article page, and saw a 0.5% increase in CTR.
+
+![](/assets/img/2021/emails.jpg)
+
+## Responsive
+
+![](/assets/img/2021/emails-1.jpg)
+
+## Results
