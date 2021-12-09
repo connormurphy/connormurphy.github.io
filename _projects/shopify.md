@@ -38,7 +38,7 @@ contributions:
 - label: Page layout & design
 - label: Email design
 date: 2002-08-30 06:00:00 +0000
-thumbnail: "/assets/img/shopify.png"
+thumbnail: "/assets/img/2021/shopify-blog-thumb.png"
 
 ---
 I did some work for Shopify.
