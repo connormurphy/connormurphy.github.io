@@ -6,21 +6,6 @@ type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
 timeline: January 2021-April 2021
 contributers:
-- role: Data
-  name: Ailin Fan
-  url: ''
-- role: SEO
-  name: Kyle Risley
-  url: https://twitter.com/KyleRisley
-- role: Project Manager
-  name: Andrée Rouette
-  url: ''
-- role: Designer
-  name: Dusty Or
-  url: ''
-- role: Visuals Editor
-  name: Leila Courey
-  url: https://twitter.com/leilacourey
 - name: Connor Murphy
   url: https://connormurphydesign.com
   role: Lead Designer
@@ -33,6 +18,21 @@ contributers:
 - role: Development Manager
   name: Steve Shaddick
   url: https://www.labatt.com/
+- role: Visuals Editor
+  name: Leila Courey
+  url: https://twitter.com/leilacourey
+- role: Designer
+  name: Dusty Or
+  url: ''
+- role: Project Manager
+  name: Andrée Rouette
+  url: ''
+- role: SEO
+  name: Kyle Risley
+  url: https://twitter.com/KyleRisley
+- role: Data
+  name: Ailin Fan
+  url: ''
 contributions:
 - label: Art Direction
 - label: Page layout & design
