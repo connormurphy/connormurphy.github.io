@@ -2,7 +2,7 @@
 layout: project
 title: Shopify Blog
 listing_type: Website Design, Art Direction, Email Design
-type: Landing page
+type: Blog Overhaul
 description: Redesign of the article page on the Shopify blog
 timeline: January 2021-April 2021
 contributers:
