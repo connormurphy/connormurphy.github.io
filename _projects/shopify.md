@@ -3,7 +3,7 @@ layout: project
 title: Shopify
 listing_type: Website Design, Art Direction, Email Design
 type: Landing page
-description: Agency website design for the folks over at WhenWeWonder.
+description: Redesign of the article page on the Shopify blog
 timeline: January 2021-April 2021
 contributers:
 - name: Connor Murphy
@@ -41,4 +41,8 @@ date: 2002-08-30 06:00:00 +0000
 thumbnail: "/assets/img/2021/shopify-blog-thumb.png"
 
 ---
-I did some work for Shopify.
+In September of 2021, the growth UX team at Shopify set out to redesign our blog property. This is a property that hasn’t been reimagined in 8 years, and there were a handful of opportunities and improvements to make. 
+
+The biggest problem, from a consumer perspective, was that the article page was very cluttered and there was no real sense of hierarchy. It was really busy, and difficult for folks to find things they were looking for. We had a hypothesis that by removing sidebar links, putting more emphasis on the actual content, improving the navigation, and giving a branding facelift we would see higher engagement with content, more time spent on page, and increase our S2L.
+
+We designed this as a v1 and an experiement to test against what we currently had. Since the article page is the most viewed on the blog as a whole, we started with this, and wouldlater revist the homepage as well as other internal pages on the platform.
