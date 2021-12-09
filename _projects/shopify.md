@@ -1,28 +1,43 @@
 ---
 layout: project
 title: Shopify
-listing_type: Website design
+listing_type: Website Design, Art Direction, Email Design
 type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
 timeline: January 2021-April 2021
 contributers:
-- name: Connell McCarthy
-  url: https://connellmccarthy.com
-  role: CEO
+- role: Data
+  name: Ailin Fan
+  url: ''
+- role: SEO
+  name: Kyle Risley
+  url: https://twitter.com/KyleRisley
+- role: Project Manager
+  name: Andrée Rouette
+  url: ''
+- role: Designer
+  name: Dusty Or
+  url: ''
+- role: Visuals Editor
+  name: Leila Courey
+  url: https://twitter.com/leilacourey
 - name: Connor Murphy
-  url: ''
-  role: Some random dude
-- role: Cool cat
-  name: Michael Brewer
-  url: ''
-- role: Moral support
-  name: Labatts
+  url: https://connormurphydesign.com
+  role: Lead Designer
+- name: Gregory Ciotti
+  url: https://twitter.com/gregoryciotti
+  role: Content
+- role: Front-End Engineer
+  name: Tyler Noseworthy
+  url: https://twitter.com/TyNoseworth
+- role: Development Manager
+  name: Steve Shaddick
   url: https://www.labatt.com/
 contributions:
-- label: Nothing
-- label: Figured out what car shopify is
-- label: Moved some stickies
-date: 2021-06-13T09:00:00.000+00:00
+- label: Art Direction
+- label: Page layout & design
+- label: Email design
+date: 2002-08-30 06:00:00 +0000
 thumbnail: "/assets/img/shopify.png"
 
 ---
