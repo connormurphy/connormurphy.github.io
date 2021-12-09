@@ -59,7 +59,9 @@ We explored a bunch of different hero options, but one thing was clear: we work 
 
 ![](/assets/img/2021/hero-exp3.jpg)
 
-## Components $br
+## Components 
+
+<br>
 
 One problem we heard from the blog team was that they didn’t have a lot of freedom when it came to things like images, videos, sound clips, tables, lists, and more. With scalability in mind, we designed a bunch of components that could be reused across the whole system.
 
