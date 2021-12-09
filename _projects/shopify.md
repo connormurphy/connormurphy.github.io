@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Shopify
+title: Shopify Blog
 listing_type: Website Design, Art Direction, Email Design
 type: Landing page
 description: Redesign of the article page on the Shopify blog
@@ -79,7 +79,7 @@ One problem we heard from the blog team was that they didn’t have a lot of fre
 
 ![](/assets/img/2021/search.jpg)
 
-![](/assets/img/2021/search-results.jpg)
+![](/assets/img/2021/search-results-1.jpg)
 
 ## Email Design
 
