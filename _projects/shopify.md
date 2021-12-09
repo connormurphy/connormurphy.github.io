@@ -46,3 +46,15 @@ In September of 2021, the growth UX team at Shopify set out to redesign our blog
 The biggest problem, from a consumer perspective, was that the article page was very cluttered and there was no real sense of hierarchy. It was really busy, and difficult for folks to find things they were looking for. We had a hypothesis that by removing sidebar links, putting more emphasis on the actual content, improving the navigation, and giving a branding facelift we would see higher engagement with content, more time spent on page, and increase our S2L.
 
 We designed this as a v1 and an experiement to test against what we currently had. Since the article page is the most viewed on the blog as a whole, we started with this, and wouldlater revist the homepage as well as other internal pages on the platform.
+
+![](/assets/img/2021/top-full.jpg)
+
+## Hero exploration
+
+![](/assets/img/2021/hero-exp-1.jpg)
+
+![](/assets/img/2021/hero-exp2.jpg)
+
+We explored a bunch of different hero options, but one thing was clear: we work with a lot of great artists for these images, so we wanted to put a big emphasis on the artwork. We landed on an option that did just that and put the artwork front and center.
+
+![](/assets/img/2021/hero-exp3.jpg)
