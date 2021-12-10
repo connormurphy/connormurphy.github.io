@@ -12,6 +12,10 @@ fields:
 - type: text
   name: title
   label: Name
+- type: toggle
+  name: include_on_homepage
+  label: Include on homepage
+  description: Include in the selected works section
 - type: text
   name: listing_type
   label: Categories

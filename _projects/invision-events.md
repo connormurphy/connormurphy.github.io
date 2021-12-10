@@ -1,6 +1,7 @@
 ---
 layout: project
 title: InVision Events
+include_on_homepage: true
 listing_type: Website, Email, Art Direction
 type: Landing page
 description: I created a platform for InVision’s events to held. This included both
@@ -31,7 +32,6 @@ contributions:
 - label: Social
 date: 2021-06-13T04:00:00.000+00:00
 thumbnail: "/assets/img/thumbnail.jpg"
-include_on_homepage: true
 
 ---
 Most recently, I created an events hub for InVision. We had all these great events, but they were scattered and hard to find. We wanted to create a simple page that houses all of our events that’s easily accessible from our website.

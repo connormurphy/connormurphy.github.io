@@ -1,6 +1,7 @@
 ---
 layout: project
 title: WhenWeWonder
+include_on_homepage: true
 listing_type: Website Design, Art Direction
 type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
@@ -23,7 +24,6 @@ contributions:
 - label: Art Direction
 date: 2021-06-13T08:00:00.000+00:00
 thumbnail: "/assets/img/frame-7.jpg"
-include_on_homepage: true
 
 ---
 In 2020, I partnered with the WhenWeWonder agency on a number of projects. With work inquiries growing, it was clear they needed a website to display their services, showcase their work, and to have a place on the web where folks could reach out to them.
