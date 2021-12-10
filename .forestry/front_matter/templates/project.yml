@@ -12,7 +12,7 @@ fields:
 - type: text
   name: title
   label: Name
-- type: toggle
+- type: boolean
   name: include_on_homepage
   label: Include on homepage
   description: Include in the selected works section
