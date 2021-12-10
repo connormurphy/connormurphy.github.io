@@ -39,6 +39,7 @@ contributions:
 - label: Email design
 date: 2002-08-30 06:00:00 +0000
 thumbnail: "/assets/img/2021/shopify-blog-thumb.png"
+include_on_homepage: false
 
 ---
 In September of 2021, the growth UX team at Shopify set out to redesign our blog property. This is a property that hasn’t been reimagined in 8 years, and there were a handful of opportunities and improvements to make.

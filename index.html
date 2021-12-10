@@ -19,19 +19,21 @@ title: 'Home'
 </div>
 
 <div class="section grid" data-scroll-section>
-  <h2 class="x-large letter-animate" id="projects-h2" data-scroll data-scroll-call="text-animate+projects-h2">{{ site.data.content.projects.title }}</h2>
+  <h2 class="x-large letter-animate" id="projects-h2" data-scroll data-scroll-call="text-animate+projects-h2">{{ site.data.content.homepage.projects.title }}</h2>
   <p class="mt-4 max-40 medium animate__fadeIn" id="projects-desc" data-scroll data-scroll-call="animate-in+projects-desc">{{ site.data.content.homepage.projects.body | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+  {% assign projects = site.projects | where: "include_on_homepage", true %}
 
   <div class="grid column-50 mobile-100 mt-10">
     <div class="project-thumbnail direction_right mt-8">
-      {% for project in site.projects %}
+      {% for project in projects %}
         <div class="slide" id="slide-{{ forloop.index }}">
           <img src="{{ project.thumbnail | relative_url }}">
         </div>
       {% endfor %}
     </div>
     <div class="projects">
-      {% for project in site.projects %}
+      {% for project in projects %}
         {% assign project_id = forloop.index | prepend: '00' | slice: -2, 2 %}
         <a href="{{ project.url }}" class="secondary">
           <li class="project" data-ref="{{ forloop.index }}" data-thumbnail="{{ project.thumbnail }}">

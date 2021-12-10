@@ -18,6 +18,7 @@ contributions:
 - label: Brand Direction
 date: 2020-06-09 06:00:00 +0000
 thumbnail: "/assets/img/2021/rc-thumbnail.png"
+include_on_homepage: true
 
 ---
 RingCentral came to us with a request for a blog overhaul. Their current blog was very outdated, and didn’t reflect their brand anymore. They wanted something modern, fresh, and that had a lot of versatility. They wanted to add in different types of media that they weren’t currently able to do, due to tech limitations.
