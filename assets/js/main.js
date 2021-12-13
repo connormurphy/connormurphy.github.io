@@ -10,18 +10,20 @@ function is_local(link) {
     return false;
   }
 }
+
 document.querySelectorAll('a').forEach(function(x) {
   const cursorEl = document.querySelector('#cursor');
-  x.addEventListener('mouseover', function() {
-    cursorEl.classList.add('active');
-  });
-  x.addEventListener('mouseleave', function() {
-    cursorEl.classList.remove('active');
-  });
-  x.addEventListener('click', function() {
-    console.log(x.host);
-    if (is_local(x) && x.classList.getAttribute('target') != '_blank') {
-      event.preventDefault();
+  if (cursorEl) {
+    x.addEventListener('mouseover', function() {
+      cursorEl.classList.add('active');
+    });
+    x.addEventListener('mouseleave', function() {
+      cursorEl.classList.remove('active');
+    });
+  }
+  x.addEventListener('click', function(e) {
+    if (is_local(x)  && x.getAttribute('target') != '_blank') {
+      e.preventDefault();
       document.querySelector('.loading-screen').classList.toggle('animated');
       setTimeout(function() {
         window.location = x.getAttribute('href');
