@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: _config.yml
+  label: Site Settings
+  match: "**/*"
 - type: directory
   path: _projects
   label: Projects
