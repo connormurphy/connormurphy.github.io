@@ -1,6 +1,7 @@
-title: 'Connor Murphy'
-description: 'I’m Connor, a digital designer based in Denver.'
-url: 'connormurphydesign.com'
+---
+title: Connor Murphy
+description: I’m Connor, a digital designer based in Denver.
+url: connormurphy.design
 permalink: pretty
 sass:
   sass_dir: _sass
@@ -9,5 +10,5 @@ collections:
   projects:
     output: true
     sort_by: date
-    permalink: /:collection/:path/
+    permalink: "/:collection/:path/"
     future: false
