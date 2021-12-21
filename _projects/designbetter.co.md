@@ -26,7 +26,6 @@ contributions:
 - label: Website design
 date: 
 thumbnail: "/assets/img/2021/dbco-thumbnail.png"
-published: false
 
 ---
 I led the design of the Conversations platform on the design education website Designbetter.co by InVision. The full website consists of lessons, podcasts, interviews, and more, all with the idea of teaching design, and showcasing how the world’s best design teams work together and get shit done. Designbetter.Co started as a design podcast, but we slowly introduced more materials and different mediums. Conversations was introduced as long form interview content that included inline videos, images, and sound clips from the best design teams.  
