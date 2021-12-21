@@ -7,7 +7,7 @@ type: Landing page
 description: Interview platform for design education website Designbetter.co
 timeline: June 2018–July 2018
 contributers:
-- role: Designer
+- role: Lead Designer
   name: Connor Murphy
   url: "/"
 - role: Creative Director
