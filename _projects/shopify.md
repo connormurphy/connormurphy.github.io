@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Shopify Blog
-include_on_homepage: false
 listing_type: Website Design, Art Direction, Email Design
 type: Blog Overhaul
 description: Redesign of the article page on the Shopify blog
@@ -38,8 +37,9 @@ contributions:
 - label: Art Direction
 - label: Page layout & design
 - label: Email design
-date: 2002-08-30 06:00:00 +0000
+date: 2002-08-30T06:00:00.000+00:00
 thumbnail: "/assets/img/2021/shopify-blog-thumb.png"
+include_on_homepage: true
 
 ---
 In September of 2021, the growth UX team at Shopify set out to redesign our blog property. This is a property that hasn’t been reimagined in 8 years, and there were a handful of opportunities and improvements to make.
