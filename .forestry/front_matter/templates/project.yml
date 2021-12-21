@@ -63,6 +63,7 @@ fields:
   name: thumbnail
   label: Thumbnail Image
 pages:
+- _projects/designbetter.co.md
 - _projects/invision-events.md
 - _projects/ringcentral-blog.md
 - _projects/shopify.md
