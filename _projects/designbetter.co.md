@@ -1,7 +1,7 @@
 ---
 layout: project
 title: DesignBetter.Co
-include_on_homepage: true
+include_on_homepage: false
 listing_type: Website Design
 type: Landing page
 description: Interview platform for design education website Designbetter.co
