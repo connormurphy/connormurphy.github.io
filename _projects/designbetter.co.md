@@ -24,7 +24,7 @@ contributers:
   url: ''
 contributions:
 - label: Website design
-date: 
+date: 2018-06-05 06:00:00 +0000
 thumbnail: "/assets/img/2021/dbco-thumbnail.png"
 
 ---
