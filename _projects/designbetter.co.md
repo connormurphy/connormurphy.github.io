@@ -40,8 +40,6 @@ I designed this new addition to the site with scalability and readability in min
 
 ![](/assets/img/2021/list-view-db.png)
 
-We explored multiple ways to layout interviews, but decided on a grid approach as it put the focus on the folks we were talking to, and allowed us to keep adding to the page as we added more folks.
-
 ![](/assets/img/2021/db-interior.png)
 
 ## Final Direction
