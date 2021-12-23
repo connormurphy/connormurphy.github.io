@@ -4,7 +4,7 @@ title: DesignBetter.Co
 include_on_homepage: false
 listing_type: Website Design
 type: Landing page
-description: Interview platform for design education website Designbetter.co
+description: Interview platform for design education website DesignBetter.Co
 timeline: June 2018–July 2018
 contributers:
 - role: Lead Designer
