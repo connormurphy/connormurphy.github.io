@@ -11,6 +11,16 @@ function is_local(link) {
   }
 }
 
+//Remove paragraph wrapper from images
+function resetImages() {
+  document.querySelectorAll('.project-content p img').forEach(function(el) {
+    const parent = el.parentElement;
+    document.querySelector('.project-content').insertBefore(el, parent);
+    parent.remove();
+  })
+}
+resetImages();
+
 document.querySelectorAll('a').forEach(function(x) {
   const cursorEl = document.querySelector('#cursor');
   if (cursorEl) {
