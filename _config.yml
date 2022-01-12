@@ -3,6 +3,7 @@ title: Connor Murphy
 description: I’m Connor, a digital designer based in Denver.
 url: connormurphy.design
 permalink: pretty
+markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
