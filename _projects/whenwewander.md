@@ -6,7 +6,7 @@ listing_type: Website Design, Art Direction
 type: Landing page
 description: Agency website design for the folks over at WhenWeWonder.
 timeline: May 2020–June 2020
-contributers:
+contributors:
 - role: Lead Designer
   name: Connor Murphy
   url: ''

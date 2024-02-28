@@ -8,17 +8,17 @@
     <p class="muted animate__fadeIn" id="brief-type-body" data-scroll data-scroll-call="animate-in+brief-type-body">{{ page.type }}</p>
   </div>
   <div class="column">
-    <h3 class="mb-3 letter-animate" id="brief-contrib-h3" data-scroll data-scroll-call="text-animate+brief-contrib-h3">Contributers</h3>
-    <ul class="contributers animate__fadeIn" id="brief-contrib-body" data-scroll data-scroll-call="animate-in+brief-contrib-body">
-      {% for contributer in page.contributers %}
-      <li class="contributer">
-        <p class="mb-1 muted">{{ contributer.role }}</p>
-        {% if contributer.url != '' %}
-          <a href="{{ contributer.url }}" class="muted" target="_blank" rel="noopener nofollow">
-            {{ contributer.name }}
+    <h3 class="mb-3 letter-animate" id="brief-contrib-h3" data-scroll data-scroll-call="text-animate+brief-contrib-h3">Contributors</h3>
+    <ul class="contributors animate__fadeIn" id="brief-contrib-body" data-scroll data-scroll-call="animate-in+brief-contrib-body">
+      {% for contributor in page.contributors %}
+      <li class="contributor">
+        <p class="mb-1 muted">{{ contributor.role }}</p>
+        {% if contributor.url != '' %}
+          <a href="{{ contributor.url }}" class="muted" target="_blank" rel="noopener nofollow">
+            {{ contributor.name }}
           </a>
         {% else %}
-          <p class="muted">{{ contributer.name }}</p>
+          <p class="muted">{{ contributor.name }}</p>
         {% endif %}
       </li>
       {% endfor %}

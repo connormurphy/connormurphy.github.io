@@ -7,7 +7,7 @@ type: Landing page
 description: I created a platform for InVision’s events to held. This included both
   in-person and virtual events.
 timeline: October 2019-November 2019
-contributers:
+contributors:
 - role: Lead Designer
   name: Connor Murphy
   url: https://connormurphydesign.com

@@ -5,7 +5,7 @@ listing_type: Website Design, Art Direction, Email Design
 type: Blog Overhaul
 description: Redesign of the article page on the Shopify blog
 timeline: January 2021-April 2021
-contributers:
+contributors:
 - name: Connor Murphy
   url: https://connormurphydesign.com
   role: Lead Designer

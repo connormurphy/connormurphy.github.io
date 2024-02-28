@@ -33,8 +33,8 @@ fields:
   name: timeline
   label: timeline
 - type: field_group_list
-  name: contributers
-  label: Contributers
+  name: contributors
+  label: Contributors
   fields:
   - type: text
     name: role
